@@ -6,7 +6,7 @@ flowchart TD
 	000000{Game Start} --> 000100
 	click 000000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000000_GameStart"
 	
-	subgraph G01 [Kokiri Forest]
+	subgraph ChildKokiri_01 [Kokiri Forest]
 		000100[Talked to Saria] --> 000210 
 		click 000100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000100_PostSaria"
 		
@@ -16,22 +16,25 @@ flowchart TD
 		000220[Got Sword] --> 000250
 		click 000220 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000220_KokiriSword"
 		
-		000250[Passed Mido] -- Deku Tree Cutscene --> 000300
+		000250[Passed Mido] -- Deku Tree's Task --> 000300
 		click 000250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000250_PastMido"
 		
 		000300[Before Deku Tree] --> 000310
 		click 000300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000300_BeforeDeku"
 		
-		000310[Inside Deku Tree] --> 000400
-		click 000310 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000310_InsideDeku"
-		
-		000400[Before Ghoma] --> 000450
-		click 000400 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000400_BeforeGhoma"
-		
-		000450[After Ghoma] -- Deku Tree Dies Cutscene --> 000500
-		click 000450 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000450_AfterGhoma"
+		subgraph DekuTree_01 [Deku Tree]
+			000310[Inside Deku Tree] --> 000400
+			click 000310 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000310_InsideDeku"
+			
+			000400[Before Ghoma] --> 000450
+			click 000400 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000400_BeforeGhoma"
+			
+			000450[After Ghoma] 
+			click 000450 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000450_AfterGhoma"
+		end
 		
 		000500[Deku Tree Died] --> 000510
+		000450 -- Deku Tree Dies --> 000500
 		click 000500 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000500_DekuDead"
 		
 		000510[After Mido runs off] --> 000520
@@ -40,9 +43,8 @@ flowchart TD
 		000520[Before Saria's Cutscene]
 		click 000510 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000520_PreSaria"
 	end
-	G01@{  }
 	
-	001100[Hyrule Field Pre-Owl] --> 001110
+	001100[Hyrule Field Pre-Owl] -- Kaepora Gaebora --> 001110
 	000520 --> 001100
 	click 000520 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/001100_HFPreOwl"
 	
@@ -52,18 +54,18 @@ flowchart TD
 	001150{Hyrule Field} --> 002000
 	click 001150 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/001150_HyruleField"
 	
-	subgraph G02 [Hyrule Castle Town]
+	subgraph CastleTown_01 [Hyrule Castle Town]
 		002000[Entering Hyrule Castle Town] --> 002100
 		click 002000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/002000_CastleTown"
 		
-		subgraph G03 [Hyrule Castle]
+		subgraph Castle_01 [Hyrule Castle]
 			002100[Entering the Castle Grounds] --> 002110
 			click 002100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/002100_CastleEnter"
 			
 			002110[After Waking Talon] --> 002200
 			click 002110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/002110_TalonWoken"
 			
-			002200[Before Meeting Zelda] --> 002210
+			002200[Before Meeting Zelda] -- Meeting Zelda --> 002210
 			click 002200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/002200_BeforeZelda"
 			
 			002210[After Meeting Zelda] --> 002220
@@ -78,28 +80,92 @@ flowchart TD
 	002220 --> 003000
 	click 003000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003000_StoneQuest"
 	
-	subgraph G04 [Kakariko Village]
+	subgraph Kakariko_01 [Kakariko Village]
 		003100[Kakariko Village] --> 003110
 		click 003100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003100_KakarikoEnter"
 		
 		003110[Starting Cuckoo Quest] --> 003112
 		click 003110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003110_CuckooQuest1"
 		
-		003112[Cuckoo Quest Bottle]
+		003112[Cuckoo Quest Bottle] --> 003120
 		click 003112 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003112_CuckooQuest2"
+		
+		003120["Guard Opened Gate (skipped Happy Mask Dialog)"] --> 003130
+		003100 -.-> 003120
+		click 003120 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003120_AfterGuard"
+		
+		003130["Graveyard Shield"]
+		003120 -.-> 003130
+		click 003130 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003130_GraveyardShield"
+	end
+	
+%%	subgraph LonLon_01 [Lon Lon Ranch]
+%%		003900[Lon Lon Ranch]
+%%		click 003100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/001150_HyruleField"
+%%	end
+%%	003000 -.-> 003900
+	
+	subgraph DeathMountain_01 [Death Mountain]
+		003200["Enter Death Mountain Trail"] --> 003300
+		003130 --> 003200
+		003120 -.-> 003200
+		click 003200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003200_DMTEnter"
+		
+		subgraph GoronCity_01 [Goron City]
+			003300["Enter Goron City"] -- Darunia's Crash Out --> 003310
+			click 003300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003300_GCEnter"
+			
+			003310["After Darunia"]
+			click 003310 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003310_Darunia"
+		end
+	end
+	003310 --> 003320
+	
+	subgraph LostWoods_01 [Lost Woods]
+		003320["Enter Sacred Grove"] --> 003330
+		click 003320 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003320_SFMEnter"
+		
+		003330["Before Saria's Song"] --> 003331
+		click 003330 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003330_BeforeSong"
+		
+		003331["After Saria's Song"]
+		click 003331 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003331_AfterSong"
+	end
+	003331 --> 003400
+	003310 -.-> 003400
+	
+	subgraph DeathMountain_01 [Death Mountain]
+		subgraph GoronCity_01 [Goron City]
+			003400["Return to Goron City"] -- Darunia's Dance --> 003410
+			click 003400 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003400_GCEnter"
+			
+			003410["Goron Bracelet Get"]
+			click 003400 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003410_PostDance"
+		end
+		
+		004000["DC Opened"] --> 004100
+		003410 --> 004000
+		click 004000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004000_DCOpened"
+		
+		subgraph Dodongos_01 [Dodongo Cavern]
+			004100["Dodongo Cavern Start"] --> 004110
+			click 004100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004100_DCStart"
+			
+			004110["Dodongo Cavern Start"] --> 004120
+			click 004110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004110_DCBombBag"
+			
+			004120["Before King Dodongo"] --> 004130
+			click 004120 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004120_DCBeforeBoss"
+			
+			004130["After King Dodongo"]
+			click 004130 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004130_DCAfterBoss"
+		end
+		004130 -- Darunia's Apology --> 004150
+		
+		004150["Spiritual Stone of Fire"]
+		click 004150 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004150_FireStone"
+		
 	end
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	subgraph G90 [Lon Lon Ranch]
-		003900[Lon Lon Ranch]
-		click 003100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/001150_HyruleField"
-	end
-	003000 -.-> 003900
 ```
