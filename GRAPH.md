@@ -3,6 +3,8 @@ Click on a node below to go to its save files folder.
 
 ```mermaid
 flowchart TD
+	classDef todo stroke-dasharray: 5 5, shape: braces
+	
 	000000{Game Start} --> 000100
 	click 000000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000000_GameStart"
 	
@@ -99,11 +101,12 @@ flowchart TD
 		click 003130 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003130_GraveyardShield"
 	end
 	
-%%	subgraph LonLon_01 [Lon Lon Ranch]
-%%		003900[Lon Lon Ranch]
-%%		click 003100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/001150_HyruleField"
-%%	end
-%%	003000 -.-> 003900
+	subgraph LonLon_01 [Lon Lon Ranch]
+		003900[Lon Lon Ranch]
+		class 003900 todo;
+	%%	click 003900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/001150_HyruleField"
+	end
+	003000 -.-> 003900
 	
 	subgraph DeathMountain_01 [Death Mountain]
 		003200["Enter Death Mountain Trail"] --> 003300
@@ -151,7 +154,7 @@ flowchart TD
 			004100["Dodongo Cavern Start"] --> 004110
 			click 004100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004100_DCStart"
 			
-			004110["Dodongo Cavern Start"] --> 004120
+			004110["Get Bomb Bag"] --> 004120
 			click 004110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004110_DCBombBag"
 			
 			004120["Before King Dodongo"] --> 004130
@@ -164,8 +167,94 @@ flowchart TD
 		
 		004150["Spiritual Stone of Fire"]
 		click 004150 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004150_FireStone"
+	end
+	004150 -- "(Ignoring House of Skultula)" --> 005000
+	
+	subgraph ZorasRiver_01 [Zora's River]
+		A05000[Enter Zora's River]
+		class A05000 todo;
+	end
+	004110 -.-> A05000
+	
+	subgraph DeathMountain_02 [Death Mountain]
+		subgraph Dodongos_02 [Dodongo Cavern]
+			A04120["Before King Dodongo"] --> A04130
+			class A04120 todo;
+		%%	click A04120 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04120_DCBeforeBoss"
+			
+			A04130["After King Dodongo"]
+			class A04130 todo;
+		%%	click A04130 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04130_DCAfterBoss"
+		end
+		A04130 -- Darunia's Apology --> A04150
 		
+		A04150["Spiritual Stone of Fire"]
+		class A04150 todo;
+		%%click A04150 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04150_FireStone"
+	end
+	ZorasRiver_01 --> A04120
+	
+	subgraph ZorasRiver_02 [Zora's River]
+		005000[Enter Zora's River] --> 005100
+		click 005000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/005000_ZoraRiverStart"
+		
+		005100[Enter Zora's Domain] --> 005110
+		click 005100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/005100_ZDEnter"
+		
+		005110[Silver Scale] --> 005120
+		click 005110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/005110_SilverScale"
 	end
 	
+	subgraph LakeHylia_02 [Lake Hylia]
+		005120[Lake Hylia Enter] --> 005130
+		click 005120 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/005120_LHEnter"
+	end
+	
+	subgraph ZorasRiver_02 [Zora's River]
+		005130[Before King Zora] -- Mweep Mweep --> 005140
+		click 005130 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/005130_BeforeKing"
+		
+		005140[Enter Zora's Fountain]
+		click 005140 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/005140_AfterKing"
+	end
+	
+	
+	
+	
+	
+	
+	
+	
+	004150 -- "(Forgot Magic)" --> M05000
+	subgraph ZorasRiver_02NoMagic ["Zora's River (Forgot Magic)"]
+		M05000[Enter Zora's River] --> M05100
+		click M05000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/M05000_ZoraRiverStart"
+		
+		M05100[Enter Zora's Domain] --> M05110
+		click M05100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/M05100_ZDEnter"
+		
+		M05110[Silver Scale] --> M05120
+		click M05110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/M05110_SilverScale"
+	
+		subgraph LakeHylia_02NoMagic [Lake Hylia]
+			M05120[Lake Hylia Enter] --> M05130
+			click M05120 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/M05120_LHEnter"
+		end
+	
+		M05130[Before King Zora] -- Mweep Mweep --> M05140
+		click M05130 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/M05130_BeforeKing"
+		
+		M05140[Enter Zora's Fountain] -- "Oh, forgot magic" --> M05160
+		click M05140 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/M05140_AfterKing"
+		
+		M05160[After Getting Din's Fire] --> M05170
+		click M05160 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/M05160_DMCOops"
+		
+		M05170["Before Getting Spin Attack (Malon at Castle)"] --> M05180
+		click M05170 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/M05170_CastleOops"
+		
+		M05180["After Getting Spin Attack (No Impa)"]
+		click M05180 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/M05180_CastleOops"
+	end
 	
 ```
