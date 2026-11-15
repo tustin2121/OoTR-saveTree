@@ -48,7 +48,7 @@ flowchart TD
 	
 	001100[Hyrule Field Pre-Owl] -- Kaepora Gaebora --> 001110
 	000520 --> 001100
-	click 000520 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/001100_HFPreOwl"
+	click 001100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/001100_HFPreOwl"
 	
 	001110[Hyrule Field Post-Owl] --> 001150
 	click 001110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/001110_HFPostOwl"
