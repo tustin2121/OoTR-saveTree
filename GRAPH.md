@@ -78,7 +78,7 @@ flowchart TD
 		end
 	end
 	
-	003000(Start of the Spiritual Stone Quest) --> 003100
+	003000{{Start of the Spiritual Stone Quest}} --> 003100
 	002220 --> 003000
 	click 003000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003000_StoneQuest"
 	
@@ -97,7 +97,6 @@ flowchart TD
 		click 003120 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003120_AfterGuard"
 		
 		003130["Graveyard Shield"]
-		003120 -.-> 003130
 		click 003130 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003130_GraveyardShield"
 	end
 	
@@ -165,10 +164,46 @@ flowchart TD
 		end
 		004130 -- Darunia's Apology --> 004150
 		
-		004150["Spiritual Stone of Fire"]
+		004150["Spiritual Stone of Fire"] --> 004200
 		click 004150 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004150_FireStone"
+		
+		004200[Before the Great Fairy] --> 004210
+		click 004200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004200_PreFairyDins"
+		
+		004210[Got Din's Fire] 
+		click 004210 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004210_DinsFire"
 	end
-	004150 -- "(Ignoring House of Skultula)" --> 005000
+	004210 --> 004220
+		
+	subgraph Kakariko_02 [Kakariko Village]
+		004220[Atop the Village Roof]
+		click 004220 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004220_Rooftop"
+	end
+	004220 --> 004225
+	
+	004225{Hyrule Field} --> 004230
+	class 004225 todo;
+	%% click 004225 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004225_HyruleField"
+	
+	subgraph CastleTown_02 [Hyrule Castle Town]
+		004230[Castle Town Nighttime] --> 004240
+		click 004230 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004230_CastleTown"
+		
+		subgraph Castle_02 [Hyrule Castle]
+			004240["Castle Grounds Nighttime (ft. Malon and Talon)"] --> 004250
+			click 004240 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004240_CastleGrounds"
+			
+			004250[Before the Great Fairy] --> 004260
+			click 004250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004250_PreFairySpin"
+			
+			004260[Got Spin Attack] -- Impa directs to Zora --> 004270
+			click 004260 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004260_SpinAttack"
+			
+			004270[Princess Zelda at Night]
+			click 004270 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004270_Zelda"
+		end
+	end
+	004270 --> 005000
 	
 	subgraph ZorasRiver_01 [Zora's River]
 		A05000[Enter Zora's River]
@@ -203,15 +238,13 @@ flowchart TD
 		
 		005110[Silver Scale] --> 005120
 		click 005110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/005110_SilverScale"
-	end
 	
-	subgraph LakeHylia_02 [Lake Hylia]
-		005120[Lake Hylia Enter] --> 005130
-		click 005120 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/005120_LHEnter"
-	end
+		subgraph LakeHylia_02 [Lake Hylia]
+			005120[Lake Hylia Enter] --> 005130
+			click 005120 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/005120_LHEnter"
+		end
 	
-	subgraph ZorasRiver_02 [Zora's River]
-		005130[Before King Zora] -- Mweep Mweep --> 005140
+		005130[Before King Zora] -- Mweep Mweep Mweep Mweep --> 005140
 		click 005130 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/005130_BeforeKing"
 		
 		005140[Enter Zora's Fountain]
