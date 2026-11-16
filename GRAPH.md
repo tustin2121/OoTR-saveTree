@@ -16,13 +16,26 @@ flowchart LR
 		Inv[/"Invalid/Glitched Save"/]
 		class Inv invalid
 	end
-	
 ```
 
 ```mermaid
 flowchart TD
 	classDef default fill:#008a1e,color:white;
 	classDef todo stroke-dasharray: 5 5,color:gray,fill:#FFFFFF88;
+	
+	classDef castle       fill: #414141,color:white;
+	classDef town         fill: #503e2d,color:white;
+	classDef forest       fill: #005500,color:white;
+	classDef forest_town  fill: #366636,color:white;
+	classDef fire         fill: #810000,color:white;
+	classDef fire_town    fill: #813f3f,color:white;
+	classDef water        fill: #0070a3,color:white;
+	classDef water_town   fill: #558297,color:white;
+	classDef shadow       fill: #69024f,color:white;
+	classDef spirit       fill: #bcd100,color:black;
+	classDef spirit_town  fill: #d19900,color:black;
+	
+	%% ------- Game Start ------- %%
 	
 	TitleScreen@{ shape: sm-circ, label: "Title Screen" } --> 000000
 	
@@ -66,6 +79,8 @@ flowchart TD
 		000520[Before Saria's Cutscene]
 		click 000510 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000520_PreSaria"
 	end
+	class DekuTree_01 forest;
+	class ChildKokiri_01 forest_town;
 	
 	001100[Hyrule Field Pre-Owl] -- Kaepora Gaebora --> 001110
 	000520 --> 001100
@@ -98,6 +113,8 @@ flowchart TD
 			click 002220 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/002220_ZLLearned"
 		end
 	end
+	class CastleTown_01 town;
+	class Castle_01 castle;
 	
 	003000{Hyrule Field} --> 003100
 	002220 --> 003000
@@ -119,12 +136,14 @@ flowchart TD
 		003130["Graveyard Shield"]
 		click 003130 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003130_GraveyardShield"
 	end
+	class Kakariko_01 town;
 	
 	subgraph LonLon_01 [Lon Lon Ranch]
 		003900[Lon Lon Ranch]
 		class 003900 todo;
-	%%	click 003900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/001150_HyruleField"
+		%% click 003900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/001150_HyruleField"
 	end
+	class LonLon_01 town;
 	003000 -.-> 003900
 	
 	subgraph DeathMountain_01 [Death Mountain]
@@ -140,6 +159,8 @@ flowchart TD
 			click 003310 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003310_Darunia"
 		end
 	end
+	class DeathMountain_01 fire_town;
+	class GoronCity_01 town;
 	003310 --> 003320
 	
 	subgraph LostWoods_01 [Lost Woods]
@@ -152,6 +173,7 @@ flowchart TD
 		003331["After Saria's Song"]
 		click 003331 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/003331_AfterSong"
 	end
+	class LostWoods_01 forest;
 	003331 --> 003400
 	
 	subgraph DeathMountain_02 [Death Mountain]
@@ -191,12 +213,16 @@ flowchart TD
 		004210[Got Din's Fire] 
 		click 004210 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004210_DinsFire"
 	end
+	class DeathMountain_02 fire_town;
+	class Dodongos_01 fire;
+	class GoronCity_02 town;
 	004210 --> 004220
 		
 	subgraph Kakariko_02 [Kakariko Village]
 		004220[Atop the Village Roof]
 		click 004220 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004220_Rooftop"
 	end
+	class Kakariko_02 town;
 	004220 --> 004225
 	
 	004225{Hyrule Field} --> 004230
@@ -221,6 +247,8 @@ flowchart TD
 			click 004270 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004270_Zelda"
 		end
 	end
+	class CastleTown_02 town;
+	class Castle_02 castle;
 	004270 --> 005000
 	
 	subgraph ZorasRiver_01 [Zora's River]
@@ -233,6 +261,7 @@ flowchart TD
 		005110[Silver Scale]
 		click 005110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/005110_SilverScale"
 	end
+	class ZorasRiver_01 water_town;
 	
 	005120[Lake Hylia Enter] --> 005130
 	005110 --> 005120
@@ -277,6 +306,8 @@ flowchart TD
 		006650["Spiritual Stone of Water<br/>(3rd stone)"]
 		click 006650 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/006650_WaterStone"
 	end
+	class ZorasRiver_02 water_town;
+	class JabuJabu_01 water;
 	
 	007100[Lake Hylia] -- Owl Flight --> 007000
 	006650 --> 007100
@@ -313,6 +344,8 @@ flowchart TD
 			%% click A04270 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04270_Zelda"
 		end
 	end
+	class CastleTown_02A town;
+	class Castle_02A castle;
 	A04270 --> A05000
 	
 	subgraph ZorasRiver_01A [Zora's River]
@@ -328,6 +361,7 @@ flowchart TD
 		class A05110 todo; 
 		%% click A05110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A05110_SilverScale"
 	end
+	class ZorasRiver_01A water_town;
 	
 	A05120[Lake Hylia Enter] --> A05130
 	class A05120 todo; 
@@ -385,6 +419,8 @@ flowchart TD
 		class A06650 todo; 
 		%% click A06650 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A06650_WaterStone"
 	end
+	class ZorasRiver_02A water_town;
+	class JabuJabu_01A water;
 	A06650 --> A04120
 	
 	subgraph DeathMountain_02A [Death Mountain]
@@ -403,6 +439,8 @@ flowchart TD
 		class A04150 todo;
 		%%click A04150 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04150_FireStone"
 	end
+	class DeathMountain_02A fire_town;
+	class Dodongos_02A fire;
 	A04150 -.-> 007000
 	
 	%% ------- Glitched Timeline ------- %%
@@ -423,6 +461,7 @@ flowchart TD
 		click G00210 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/G00210_PostSaria"
 		
 	end
+	class ZorasRiver_02G water_town;
 	
 
 	%% ------- End of Child 1 ------- %%
@@ -451,6 +490,7 @@ flowchart TD
 		007240["Got Epona's Song"] --> 007250
 		click 007240 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/007240_EponaSong"
 	end
+	class LonLon_05 town;
 	
 	subgraph CastleTown_05 [Hyrule Castle Town]
 		007250["Castle Town"] --> 007290
@@ -459,6 +499,7 @@ flowchart TD
 		007290["The Master Sword Awaits"]
 		click 007290 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/007290_DoorOfTime"
 	end
+	class CastleTown_04,CastleTown_05 town;
 
 	%% ------- Master Sword ------- %%
 	
@@ -474,6 +515,18 @@ flowchart TD
 	classDef default fill:#008a1e,color:white;
 	classDef todo stroke-dasharray: 5 5,color:gray,fill:#FFFFFF88;
 	
+	classDef castle       fill: #414141,color:white;
+	classDef town         fill: #503e2d,color:white;
+	classDef forest       fill: #005500,color:white;
+	classDef forest_town  fill: #366636,color:white;
+	classDef fire         fill: #810000,color:white;
+	classDef fire_town    fill: #813f3f,color:white;
+	classDef water        fill: #0070a3,color:white;
+	classDef water_town   fill: #558297,color:white;
+	classDef shadow       fill: #69024f,color:white;
+	classDef spirit       fill: #bcd100,color:black;
+	classDef spirit_town  fill: #d19900,color:black;
+	
 	TimeTravel_01@{ shape: hourglass, label: "." }
 	TimeTravel_01 --> 010000
 	
@@ -481,6 +534,7 @@ flowchart TD
 		010000["The Future"]
 		click 010000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/010000_Shiek"
 	end
+	class CastleTown_50 castle;
 	
 	010100{Hyrule Field}
 	010000 --> 010100
@@ -500,12 +554,14 @@ flowchart TD
 		010250["Epona Escaped"]
 		click 010250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/010250_EponaEscape"
 	end
+	class LonLon_10 town;
 	010250 --> 011100
 	010250 --> 01221A
 	
 	01221A[Minuet without Hookshot]
 	click 01221A href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/01221A_ForestSongHookshotless"
 	
+	%% ------- Forest Temple ------- %%
 	
 	subgraph Kakariko_02 [Kakariko Village]
 		011100[Enter Kakariko Village] --> 011120
@@ -532,13 +588,11 @@ flowchart TD
 		011330[Cojiro's Mum]
 		click 011330 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/011330_TradeQuest2"
 	end
+	class Kakariko_02 town;
 	
 	011400{Hyrule Field}
 	click 011400 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/011400_HyruleField"
 	011330 --> 011400 --> 012000
-	
-	011440[Granny's Potions]
-	click 011440 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/011440_TradeQuest4"
 	
 	012010 --> 011420 --> 011440 --> 011450
 	
@@ -550,8 +604,18 @@ flowchart TD
 		click 012010 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012010_LostWoods"
 		
 		011420[Cojiro's Owner]
+		class 011420 todo;
 		click 011420 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/011420_TradeQuest3"
+	end
+	class AdultKokiri_01 forest_town;
 	
+	subgraph Kakariko_03 [Kakariko Village]
+		011440[Granny's Potions]
+		click 011440 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/011440_TradeQuest4"
+	end
+	class Kakariko_03 town;
+	
+	subgraph AdultKokiri_02 [Lost Woods]
 		011450[Everybody Stalfos] --> 012100
 		click 011450 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/011450_TradeQuest5"
 		
@@ -592,6 +656,55 @@ flowchart TD
 		class 012900 todo;
 		click 012900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012800_ForestPreBoss"
 	end
+	class AdultKokiri_01 forest_town;
+	class ForestTemple_01 forest;
+	
+	%% ------- Fire Temple ------- %%
+	012900 -- Via Lost Woods --> 013000
+	
+	subgraph GoronCity_52 [Goron City]
+		013000[Goron City is Empty]
+		class 013000 todo;
+		click 013000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013000_GoronCity"
+	end
+	class GoronCity_52 fire_town;
+	
+	%% ------- Water Temple ------- %%
+	
+	subgraph ZoraDomain_52 [Zora's Domain]
+		014000[Zora's Domain is Frozen]
+		class 014000 todo;
+		click 014000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014000_ZoraDomain"
+	end
+	class ZoraDomain_52 water_town;
+	
+	%% ------- Shadow Temple ------- %%
+	
+	subgraph Kakariko_60 [Kakariko Village]
+		015000[Kakariko is Burning]
+		class 015000 todo;
+		click 015000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015000_ShadowSong"
+	end
+	class Kakariko_60 town;
+	
+	%% ------- Spirit Temple ------- %%
+	
+	subgraph GerudoValley_50 [Gerudo Valley]
+		016000[Gerudo Valley]
+		class 016000 todo;
+		click 016000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016000_GerudoValley"
+	end
+	class GerudoValley_50 spirit_town;
+	
+	%% ------- Final Dungeon ------- %%
+	
+	subgraph CastleTown_70 [Castle Town Ruins]
+		017000[Light Arrows!]
+		class 017000 todo;
+		click 017000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017000_LightArrows"
+	end
+	class CastleTown_70 castle;
+	
 	
 ```
 
@@ -604,6 +717,18 @@ Sometimes I do an oopsie but already did the work, so might as well keep it in, 
 flowchart TD
 	classDef default fill:#008a1e,color:white;
 	classDef todo stroke-dasharray: 5 5,color:gray,fill:#FFFFFF88;
+	
+	classDef castle       fill: #414141,color:white;
+	classDef town         fill: #503e2d,color:white;
+	classDef forest       fill: #005500,color:white;
+	classDef forest_town  fill: #366636,color:white;
+	classDef fire         fill: #810000,color:white;
+	classDef fire_town    fill: #813f3f,color:white;
+	classDef water        fill: #0070a3,color:white;
+	classDef water_town   fill: #558297,color:white;
+	classDef shadow       fill: #69024f,color:white;
+	classDef spirit       fill: #bcd100,color:black;
+	classDef spirit_town  fill: #d19900,color:black;
 	
 	subgraph Alt_NoMagic [Forgot Magic after finishing DC]
 		direction TD
