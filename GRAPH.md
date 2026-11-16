@@ -2,14 +2,34 @@
 Click on a node below to go to its save files folder.
 
 ```mermaid
+flowchart LR
+	classDef default fill:#008a1e,color:white;
+	classDef todo stroke-dasharray: 5 5,color:gray,fill:#FFFFFF88;
+	classDef invalid fill:#9b5602;
+	
+	subgraph Key [Key]
+		S[Save]
+		
+		T[Save TODO]
+		class T todo;
+		
+		Inv[/"Invalid/Glitched Save"/]
+		class Inv invalid
+	end
+	
+```
+
+```mermaid
 flowchart TD
 	classDef default fill:#008a1e,color:white;
 	classDef todo stroke-dasharray: 5 5,color:gray,fill:#FFFFFF88;
 	
-	000000{Game Start} --> 000100
-	click 000000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000000_GameStart"
+	TitleScreen@{ shape: sm-circ, label: "Title Screen" } --> 000000
 	
 	subgraph ChildKokiri_01 [Kokiri Forest]
+		000000[Wake up Sleepyhead!] --> 000100
+		click 000000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000000_GameStart"
+	
 		000100[Talked to Saria] --> 000210 
 		click 000100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/000100_PostSaria"
 		
@@ -385,7 +405,26 @@ flowchart TD
 	end
 	A04150 -.-> 007000
 	
-	%% ------- Alternate Timelines ------- %%
+	%% ------- Glitched Timeline ------- %%
+	
+	subgraph ZorasRiver_02G [Zora's River]
+		
+		G00100[Forest Escape] --> G00200
+		000100 --> G00100
+		class G00100 todo;
+		click G00100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/G00100_ForestEscape"
+		
+		G00200[Zora's Domain] --> G00210
+		class G00200 todo;
+		click G00200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/G00200_PostSaria"
+		
+		G00210[Silver Scale] 
+		class G00210 todo;
+		click G00210 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/G00210_PostSaria"
+		
+	end
+	
+	%% ------- Alternate Timeline ------- %%
 	
 	004150 -- "(Forgot Magic)" --> M05000
 	subgraph ZorasRiver_02NoMagic ["Zora's River (Forgot Magic)"]
@@ -429,22 +468,44 @@ flowchart TD
 	%% 007200[/"Zelda's Escape<br/>(Cannot Save)"/] --> 007210
 	%% click 007200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/007200_AfterEscape"
 	
-	007210["Got Ocarina of Time"] --> 007250
+	007210["Got Ocarina of Time"] --> 007212
 	click 007210 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/007210_AfterOcarina"
 	
-	subgraph CastleTown_03 [Hyrule Castle Town]
-		007250["Castle Town<br/>(ft. Malon & Talon)"] --> 007290
+	007212["Got Epona's Song"] --> 007250
+	click 007212 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/007212_EponaSong"
+	
+	subgraph CastleTown_04 [Hyrule Castle Town]
+		007250["Castle Town"] --> 007290
 		click 007250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/007250_CastleTown"
 		
 		007290["The Master Sword Awaits"]
 		click 007290 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/007290_DoorOfTime"
 	end
+	
+	007210 --> B07250
+	subgraph CastleTown_03 [Hyrule Castle Town]
+		B07250["Castle Town<br/>(ft. Malon & Talon)"] --> B07290
+		click B07250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B07250_CastleTown"
+		
+		B07290["The Master Sword Awaits"]
+		click B07290 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B07290_DoorOfTime"
+	end
+	B07290 -- Master Sword Cutscene --> B10000
+	
+	subgraph CastleTown_50 [Castle Town Ruins]
+		B10000["The Future"]
+		click B10000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B10000_Shiek"
+	end
+	
+	B10100{Hyrule Field}
+	B10000 --> B10100
+	click B10100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B10100_HyruleField"
 
 	%% ------- Master Sword ------- %%
 	
 	MasterSwordCS@{ shape: trap-b, label: "Master Sword<br/>Cutscene" }
 	style MasterSwordCS fill:gray;
-	TimeTravel_01@{ shape: bolt, label: "." }
+	TimeTravel_01@{ shape: hourglass, label: "." }
 	007290 --> MasterSwordCS --> TimeTravel_01
 	
 ```
@@ -454,7 +515,7 @@ flowchart TD
 	classDef default fill:#008a1e,color:white;
 	classDef todo stroke-dasharray: 5 5,color:gray,fill:#FFFFFF88;
 	
-	TimeTravel_01@{ shape: bolt, label: "." }
+	TimeTravel_01@{ shape: hourglass, label: "." }
 	TimeTravel_01 --> 010000
 	
 	subgraph CastleTown_50 [Castle Town Ruins]
@@ -464,47 +525,145 @@ flowchart TD
 	
 	010100{Hyrule Field} --> 011100
 	010000 --> 010100
+	class 010100 todo;
 	click 010100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/010100_HyruleField"
 	
 	
 	subgraph Kakariko_02 [Kakariko Village]
 		011100[Enter Kakariko Village] --> 011200
+		class 011100 todo;
 		click 011100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/011100_Kakariko"
 		
 		011200[Enter Dampe's Grave] --> 011300
+		class 011200 todo;
 		click 011200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/011200_DampeGrave"
 		
 		011300[Got Hookshot] --> 011310
+		class 011300 todo;
 		click 011300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/011300_Hookshot"
 		
 		011310[Song of Storms]
+		class 011310 todo;
 		click 011310 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/011310_StormsSong"
 	end
 	011310 --> 012000
 	
 	subgraph AdultKokiri_01 [Kokiri Forest]
 		012000[Monsters in Kokiri] --> 012010
+		class 012000 todo;
 		click 012000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012000_KokiriForest"
 		
 		012010[Lost Woods] --> 012100
+		class 012010 todo;
 		click 012010 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012010_LostWoods"
 		
 		012100[Before speaking with Mido] --> 012101
+		class 012100 todo;
 		click 012100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012100_PreMido"
 		
 		012101[After speaking with Mido] --> 012102
+		class 012101 todo;
 		click 012101 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012101_PeriMido"
 		
-		012102[After Saria's Song for Mido]
+		012102[After Saria's Song for Mido] --> 012200
+		class 012102 todo;
 		click 012102 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012102_PostMido"
+		
+		012200[Sacred Grove] --> 012210
+		class 012200 todo;
+		click 012200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012200_SFMEnter"
+		
+		012210[Minuet of the Forest] --> 012300
+		class 012210 todo;
+		click 012210 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012210_ForestSong"
+		
+		subgraph ForestTemple_01 [Forest Temple]
+			012300[Forest Temple] --> 012400
+			class 012300 todo;
+			click 012300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012300_ForestStart"
+			
+			012400[Get Fairy Bow] --> 012800
+			class 012400 todo;
+			click 012400 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012400_BowGet"
+			
+			012800[Before Phantom Ganon] --> 012810
+			class 012800 todo;
+			click 012800 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012800_ForestPreBoss"
+			
+			012810[After Phantom Ganon]
+			class 012810 todo;
+			click 012810 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012800_ForestPreBoss"
+		end
+		
+		012900[Medallion of Forest]
+		012810 --> 012900
+		class 012900 todo;
+		click 012900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012800_ForestPreBoss"
 	end
 	
-	012900[Entering Goron City] --> 012900
-	click 012900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012900_GCEnter"
+```
+
+
+
+# Alt B
+No Epona's Song
+
+```mermaid
+flowchart TD
+	classDef default fill:#008a1e,color:white;
+	classDef todo stroke-dasharray: 5 5,color:gray,fill:#FFFFFF88;
 	
-	012910[Got the Goron Tunic]
-	click 012910 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012910_KidGoro"
+	TimeTravel_01@{ shape: hourglass, label: "." }
+	TimeTravel_01 --> B10000
 	
+	subgraph CastleTown_50 [Castle Town Ruins]
+		B10000["The Future"]
+		click B10000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B10000_Shiek"
+	end
+	
+	B10100{Hyrule Field} --> B11100
+	B10000 --> B10100
+	click B10100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B10100_HyruleField"
+	
+	
+	subgraph Kakariko_02 [Kakariko Village]
+		B11100[Enter Kakariko Village] --> B11200
+		click B11100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B11100_Kakariko"
+		
+		B11200[Enter Dampe's Grave] --> B11300
+		click B11200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B11200_DampeGrave"
+		
+		B11300[Got Hookshot] --> B11310
+		click B11300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B11300_Hookshot"
+		
+		B11310[Song of Storms]
+		click B11310 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B11310_StormsSong"
+	end
+	B11310 --> B12000
+	
+	subgraph AdultKokiri_01 [Kokiri Forest]
+		B12000[Monsters in Kokiri] --> B12010
+		click B12000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B12000_KokiriForest"
+		
+		B12010[Lost Woods] --> B12100
+		click B12010 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B12010_LostWoods"
+		
+		B12100[Before speaking with Mido] --> B12101
+		click B12100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B12100_PreMido"
+		
+		B12101[After speaking with Mido] --> B12102
+		click B12101 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B12101_PeriMido"
+		
+		B12102[After Saria's Song for Mido]
+		click B12102 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B12102_PostMido"
+	end
+	
+	B12900[Entering Goron City] --> B12910
+	B12010 --> B12900
+	click B12900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B12900_GCEnter"
+	
+	B12910[Got the Goron Tunic]
+	click B12910 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/B12910_KidGoro"
 	
 	
 ```
