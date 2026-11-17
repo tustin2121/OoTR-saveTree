@@ -561,6 +561,9 @@ flowchart TD
 	01221A[Minuet without Hookshot]
 	click 01221A href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/01221A_ForestSongHookshotless"
 	
+	
+	%% ======== Path 0: Game Intended Order ======== %%
+	
 	%% ------- Forest Temple ------- %%
 	
 	subgraph Kakariko_02 [Kakariko Village]
@@ -750,40 +753,375 @@ flowchart TD
 	click 014150 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014150_LakeHylia"
 	
 	subgraph WaterTemple_01 [Water Temple]
-		014200[Water Temple Start]
+		014200[Water Temple Start] --> 014250
 		click 014200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014200_WaterStart"
+		
+		014250[Before Dark Link] --> 014255
+		class 014250 todo; 
+		click 014250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014250_PreDarkLink"
+		
+		014255[After Dark Link] --> 014260
+		class 014255 todo; 
+		click 014255 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014255_PostDarkLink"
+		
+		014260[Got Longshot] --> 014280
+		class 014260 todo; 
+		click 014260 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014260_Longshot"
+		
+		014280[Before Morpha] --> 014285
+		class 014280 todo; 
+		click 014280 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014280_Longshot"
+		
+		014285[After Morpha] --> 014500
+		class 014285 todo; 
+		click 014285 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014285_Longshot"
+		
+		014500[Water Medallion]
+		class 014500 todo;
+		click 014500 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014500_WaterMedallion"
 	end
 	class WaterTemple_01 water;
+	014500 --> 014600
+	
+	014600{Hyrule Field}
+	class 014600 todo;
+	click 014600 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014600_HyruleField"
+	
+	014600 --> 
+	TimeTravel_02@{ shape: hourglass, label: "." }
+	
+	%% ------- Bottom of the Well ------- %%
+	
+	TimeTravel_02 --> 
+	
+	015000[Back in Time] --> 015050
+	class 015000 todo;
+	click 015000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015000_Child02"
+	
+	subgraph Kakariko_61 [Kakariko Village]
+		015050[Before Ruining This Man's Life] -- Song of Storms --> 015100
+		class 015050 todo;
+		click 015050 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015050_BeforeStorms"
+		
+		015100[Song of Storms] --> 015200
+		class 015100 todo;
+		click 015100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015100_StormsSong"
+		
+		subgraph Well_60 [Bottom of the Well]
+			015200[Bottom of the Well]
+			class 015200 todo;
+			click 015200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015200_BotW"
+			
+			015200-->
+			015250[Lenses of Truth]
+			class 015250 todo;
+			click 015250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015250_BotW"
+		end
+		
+	end
+	class Well_60 shadow;
+	class Kakariko_61 town;
+	
+	015250--> 
+	015900{Hyrule Field}
+	class 015900 todo;
+	click 015900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015900_HyruleField"
+	
+	015900 -->
+	TimeTravel_03@{ shape: hourglass, label: "." }
+	
+	TimeTravel_03 --> 
+	015910[Back to the Future] --> 016000
+	class 015910 todo;
+	click 015910 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015910_Adult02"
 	
 	%% ------- Shadow Temple ------- %%
 	
 	subgraph Kakariko_60 [Kakariko Village]
-		015000[Kakariko is Burning]
-		class 015000 todo;
-		click 015000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015000_ShadowSong"
+		016000[Kakariko is Burning] --> 016100
+		class 016000 todo;
+		click 016000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016000_ShadowSong"
+		
+		subgraph Shadow_01 [Shadow Temple]
+			016100[Shadow Temple] --> 016200
+			class 016100 todo;
+			click 016100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016100_ShadowStart"
+			
+			016200[Hover Boots] --> 016300
+			class 016200 todo;
+			click 016200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016200_HoverBoots"
+			
+			016300[The Shadow Ship Awaits] --> 016350
+			class 016300 todo;
+			click 016300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016300_PreShadowShip"
+			
+			016350[Deep Shadow] --> 016500
+			class 016350 todo;
+			click 016350 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016350_PostShadowShip"
+			
+			016500[Before Bongo Bongo] --> 016550
+			class 016500 todo;
+			click 016500 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016500_PreShadowBoss"
+			
+			016550[After Bongo Bongo]
+			class 016550 todo;
+			click 016550 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016550_PostShadowBoss"
+		end
+		
+		016550 --> 
+		016900[Shadow Medallion]
+		class 016900 todo;
+		click 016900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016900_ShadowMedallion"
 	end
 	class Kakariko_60 town;
+	class Shadow_01 shadow;
+	016900 --> 016600
+	
+	016600{Hyrule Field}
+	class 016600 todo;
+	click 016600 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016600_HyruleField"
 	
 	%% ------- Spirit Temple ------- %%
 	
+	016600 --> 017000
 	subgraph GerudoValley_50 [Gerudo Valley]
-		016000[Gerudo Valley]
-		class 016000 todo;
-		click 016000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016000_GerudoValley"
+		017000[Gerudo Valley]
+		class 017000 todo;
+		click 017000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017000_GerudoValley"
+		017000 --> 017100
+		
+		subgraph Foretress_01 [Gerudo Fortress]
+			017100[Gerudo Fortress] --> 017190
+			class 017100 todo;
+			click 017100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017100_GerudoFortress"
+			
+			017190[Gerudo Pass] --> 017200
+			class 017190 todo;
+			click 017190 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017190_GerudoPass"
+			
+			017200[Gerudo Proving Grounds] --> 017280
+			class 017200 todo;
+			click 017200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017200_GTG"
+			
+			017280[Ice Arrows]
+			class 017280 todo;
+			click 017280 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017280_IceArrows"
+		end
+		
+		017280 --> 
+		017300[Haunted Wasteland / Mirage Desert] --> 017400
+		class 017300 todo;
+		click 017300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017300_HauntedWasteland"
+		
+		subgraph Spirit_01 [Spirit Temple]
+			017400[Requium of Spirit] --> TimeTravel_10
+			class 017400 todo;
+			click 017400 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017400_SpiritSong"
+			
+			TimeTravel_10@{ shape: hourglass, label: "." } -->
+			
+			017410[Meeting Noboru] --> 017460
+			class 017410 todo;
+			click 017410 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017410_ChildSpiritStart"
+			
+			017460[The Iron Knuckle Defeated] --> 017490
+			class 017460 todo;
+			click 017460 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017460_PreSilvers"
+			
+			017490[Got Silver Gauntlets] --> TimeTravel_11
+			class 017490 todo;
+			click 017490 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017490_SilverGaunts"
+			
+			TimeTravel_11@{ shape: hourglass, label: "." } -->
+			
+			017500[Adult Spirit Temple] --> 017550
+			class 017500 todo;
+			click 017500 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017500_PreShadowShip"
+			
+			017550[Mirror Shield] --> 017800
+			class 017550 todo;
+			click 017550 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017550_MirrorShield"
+			
+			017800[Before Naburu] --> 017820
+			class 017800 todo;
+			click 017800 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017800_PreSpiritMiniBoss"
+			
+			017820[Before Twinrova] --> 017850
+			class 017820 todo;
+			click 017820 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017820_PreSpiritBoss"
+			
+			017850[After Twinrova]
+			class 017850 todo;
+			click 017850 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017850_PostSpiritBoss"
+		end
+		
+		017850 --> 
+		017900[Spirit Medallion]
+		class 017900 todo;
+		click 017900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017900_SpiritMedallion"
 	end
 	class GerudoValley_50 spirit_town;
+	017900 --> 020000
 	
+	%% ------- Spirit Temple (Alt Path) ------- %%
+	015910 --> A16000
+	subgraph GerudoValley_50A [Gerudo Valley]
+		
+		A16000[Gerudo Valley]
+		class A16000 todo;
+		click A16000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16000_GerudoValley"
+		A16000 --> A16100
+		
+		subgraph Foretress_01A [Gerudo Fortress]
+			A16100[Gerudo Fortress] --> A16190
+			class A16100 todo;
+			click A16100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16100_GerudoFortress"
+			
+			A16190[Gerudo Pass] --> A16200
+			class A16190 todo;
+			click A16190 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16190_GerudoPass"
+			
+			A16200[Gerudo Proving Grounds] --> A16280
+			class A16200 todo;
+			click A16200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16200_GTG"
+			
+			A16280[Ice Arrows]
+			class A16280 todo;
+			click A16280 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16280_IceArrows"
+		end
+		
+		A16280 --> 
+		A16300[Haunted Wasteland / Mirage Desert] --> A16400
+		class A16300 todo;
+		click A16300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16300_HauntedWasteland"
+		
+		subgraph Spirit_01A [Spirit Temple]
+			A16400[Requium of Spirit] --> TimeTravel_10A
+			class A16400 todo;
+			click A16400 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16400_SpiritSong"
+			
+			TimeTravel_10A@{ shape: hourglass, label: "." } -->
+			
+			A16410[Meeting Noboru] --> A16460
+			class A16410 todo;
+			click A16410 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16410_ChildSpiritStart"
+			
+			A16460[The Iron Knuckle Defeated] --> A16490
+			class A16460 todo;
+			click A16460 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16460_PreSilvers"
+			
+			A16490[Got Silver Gauntlets] --> TimeTravel_11A
+			class A16490 todo;
+			click A16490 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16490_SilverGaunts"
+			
+			TimeTravel_11A@{ shape: hourglass, label: "." } -->
+			
+			A16500[Adult Spirit Temple] --> A16550
+			class A16500 todo;
+			click A16500 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16500_PreShadowShip"
+			
+			A16550[Mirror Shield] --> A16800
+			class A16550 todo;
+			click A16550 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16550_MirrorShield"
+			
+			A16800[Before Naburu] --> A16820
+			class A16800 todo;
+			click A16800 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16800_PreSpiritMiniBoss"
+			
+			A16820[Before Twinrova] --> A16850
+			class A16820 todo;
+			click A16820 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16820_PreSpiritBoss"
+			
+			A16850[After Twinrova]
+			class A16850 todo;
+			click A16850 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16850_PostSpiritBoss"
+		end
+		
+		A16850 --> 
+		A16900[Spirit Medallion]
+		class A16900 todo;
+		click A16900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A16900_SpiritMedallion"
+	end
+	class GerudoValley_50A spirit_town;
+	A16900 --> A15600
+	
+	A15600{Hyrule Field} --> A17000
+	class A15600 todo;
+	click A15600 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A15600_HyruleField"
+	
+	%% ------- Shadow Temple (Alt Path) ------- %%
+	
+	subgraph Kakariko_60A [Kakariko Village]
+		A17000[Kakariko is Burning]
+		class A17000 todo;
+		click A17000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A17000_ShadowSong"
+		A17000 --> A17100
+		
+		subgraph Shadow_01A [Shadow Temple]
+			A17100[Shadow Temple] --> A17200
+			class A17100 todo;
+			click A17100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A17100_ShadowStart"
+			
+			A17200[Hover Boots] --> A17300
+			class A17200 todo;
+			click A17200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A17200_HoverBoots"
+			
+			A17300[The Shadow Ship Awaits] --> A17350
+			class A17300 todo;
+			click A17300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A17300_PreShadowShip"
+			
+			A17350[Deep Shadow] --> A17500
+			class A17350 todo;
+			click A17350 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A17350_PostShadowShip"
+			
+			A17500[Before Bongo Bongo] --> A17550
+			class A17500 todo;
+			click A17500 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A17500_PreShadowBoss"
+			
+			A17550[After Bongo Bongo]
+			class A17550 todo;
+			click A17550 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A17550_PostShadowBoss"
+		end
+		
+		A17550 --> 
+		A17900[Shadow Medallion]
+		class A17900 todo;
+		click A17900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A17900_ShadowMedallion"
+	end
+	class Kakariko_60A town;
+	class Shadow_01A shadow;
+	A17900 -.-> 020000
+	
+	
+	%% ======== Path D: Major Items Path ======== %%
+	
+	%% ------- Fire Temple ------- %%  Grab Hammer and leave
+	%% ------- Water Temple ------- %%  Grab longshot and leave
+	%% ------- Forest Temple ------- %%  Grab Bow
+	%% ------- Shadow Temple ------- %%
+	%% ------- Spirit Temple ------- %%
+	%% ------- Spirit Temple (Alt Path) ------- %%
+	%% ------- Shadow Temple (Alt Path) ------- %%
+	%% D15500 -.-> 020000
+	
+	
+	%% ======== Path E: FFW Skip ======== %%
+	
+	%% ------- Shadow Temple ------- %%  Hover to Shadow
+	%% ------- Spirit Temple ------- %%  Hoverboots to Sand
+	%% ------- Forest Temple ------- %%  Grab Bow
+	%% E15500 -.-> 020000
+	
+	
+	%% ======== Final Dungeon ======== %%
 	%% ------- Final Dungeon ------- %%
 	
 	subgraph CastleTown_70 [Castle Town Ruins]
-		017000[Light Arrows!]
-		class 017000 todo;
-		click 017000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017000_LightArrows"
+		020000[Light Arrows!]
+		class 020000 todo;
+		click 020000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020000_LightArrows"
 	end
 	class CastleTown_70 castle;
-	
-	WaterTemple_01 --> Kakariko_60 --> GerudoValley_50 --> CastleTown_70
-	
 ```
 
 
