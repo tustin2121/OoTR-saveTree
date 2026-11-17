@@ -635,48 +635,125 @@ flowchart TD
 		click 012210 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012210_ForestSong"
 		
 		subgraph ForestTemple_01 [Forest Temple]
-			012300[Forest Temple] --> 012400
+			012300[Forest Temple] --> 012450
 			click 012300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012300_ForestStart"
 			
-			012400[Get Fairy Bow] --> 012800
-			class 012400 todo;
-			click 012400 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012400_BowGet"
+			012450[Center of Forest] --> 012500
+			click 012450 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012450_Ghosts"
+			
+			012500[Get Fairy Bow] --> 012520
+			click 012500 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012500_BowGet"
+			
+			012520[Before Green Poe] --> 012800
+			click 012520 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012520_GreenPoe"
 			
 			012800[Before Phantom Ganon] --> 012810
-			class 012800 todo;
 			click 012800 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012800_ForestPreBoss"
 			
 			012810[After Phantom Ganon]
-			class 012810 todo;
-			click 012810 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012800_ForestPreBoss"
+			click 012810 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012810_ForestPostBoss"
 		end
 		
-		012900[Medallion of Forest]
+		012900[Forest Medallion] --> 012950
 		012810 --> 012900
-		class 012900 todo;
-		click 012900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012800_ForestPreBoss"
+		click 012900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012900_ForestMedallion"
+		
+		012950[Mido Afterwards]
+		click 012950 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012950_MidoAfterwards"
 	end
-	class AdultKokiri_01 forest_town;
+	class AdultKokiri_02 forest_town;
 	class ForestTemple_01 forest;
 	
 	%% ------- Fire Temple ------- %%
-	012900 -- Via Lost Woods --> 013000
+	012950 -- Via Lost Woods --> 013000
 	
 	subgraph GoronCity_52 [Goron City]
-		013000[Goron City is Empty]
-		class 013000 todo;
+		013000[Goron City is Empty] --> 013010
 		click 013000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013000_GoronCity"
+		
+		013010[Link the Goron / Goron Tunic] --> 013100
+		click 013010 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013010_GoronLink"
+		
+		013100[Bolero of Fire]
+		click 013100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013100_FireSong"
 	end
 	class GoronCity_52 fire_town;
+	
+	013110[Kakariko Village] --> 013120
+	013100 --> 013110
+	click 013110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013110_Kakariko"
+	
+	013120[Prelude of Light] --> 013140
+	click 013120 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013120_Prelude"
+	
+	013140[Returning with a Fifth Poe] --> 013150
+	click 013140 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013140_PoeCollecting5"
+	
+	013150[Final Bottle] --> 013200
+	click 013150 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013150_Bottle5"
+	
+	
+	subgraph FireTemple_01 [Fire Temple]
+		013200[Fire Temple] --> 013210
+		click 013200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013200_FireStart"
+		
+		013210[Darunia Goes to Die] --> 013250
+		click 013210 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013210_FireDarunia"
+		
+		013250[Hammer Get!] --> 013280
+		click 013250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013250_HammerGet"
+		
+		013280[Before Volvagia] --> 013285
+		click 013280 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013280_PreFireBoss"
+		
+		013285[After Volvagia] --> 013290
+		click 013285 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013285_PostFireBoss"
+		
+		013290[Fire Medallion]
+		click 013290 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013290_FireMedallion"
+	end
+	class FireTemple_01 fire;
+	013290 --> 
+	
+	013500[Got Double Magic] --> 013600
+	click 013500 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013500_DoubleMagic"
+	
+	013600{Hyrule Field} --> 014000
+	click 013600 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/013600_HyruleField"
 	
 	%% ------- Water Temple ------- %%
 	
 	subgraph ZoraDomain_52 [Zora's Domain]
-		014000[Zora's Domain is Frozen]
-		class 014000 todo;
+		014000[Zora's Domain is Frozen] --> 014100
 		click 014000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014000_ZoraDomain"
+		
+		subgraph IceCavern_01 [Ice Cavern]
+			014100[Ice Cavern] --> 014110
+			click 014100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014100_IceCavernStart"
+			
+			014110[Pre Iron Boots] --> 014120
+			click 014110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014110_PreIronBoots"
+			
+			014120[Serenade of Water]
+			click 014120 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014120_WaterSong"
+		end
+		
+		014130[Got Zora Tunic]
+		click 014130 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014130_ZoraTunic"
+		
 	end
 	class ZoraDomain_52 water_town;
+	class IceCavern_01 water;
+	014120 --> 014130 --> 014150
+	
+	014150[Lake Hylia] --> 014200
+	click 014150 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014150_LakeHylia"
+	
+	subgraph WaterTemple_01 [Water Temple]
+		014200[Water Temple Start]
+		click 014200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014200_WaterStart"
+	end
+	class WaterTemple_01 water;
 	
 	%% ------- Shadow Temple ------- %%
 	
@@ -705,6 +782,7 @@ flowchart TD
 	end
 	class CastleTown_70 castle;
 	
+	WaterTemple_01 --> Kakariko_60 --> GerudoValley_50 --> CastleTown_70
 	
 ```
 
