@@ -757,65 +757,70 @@ flowchart TD
 		click 014200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014200_WaterStart"
 		
 		014250[Before Dark Link] --> 014255
-		class 014250 todo; 
 		click 014250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014250_PreDarkLink"
 		
 		014255[After Dark Link] --> 014260
-		class 014255 todo; 
 		click 014255 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014255_PostDarkLink"
 		
 		014260[Got Longshot] --> 014280
-		class 014260 todo; 
 		click 014260 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014260_Longshot"
 		
 		014280[Before Morpha] --> 014285
-		class 014280 todo; 
-		click 014280 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014280_Longshot"
+		click 014280 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014280_BeforeWaterBoss"
 		
 		014285[After Morpha] --> 014500
-		class 014285 todo; 
-		click 014285 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014285_Longshot"
+		click 014285 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014285_AfterWaterBoss"
 		
 		014500[Water Medallion]
-		class 014500 todo;
 		click 014500 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014500_WaterMedallion"
 	end
 	class WaterTemple_01 water;
-	014500 --> 014600
 	
-	014600{Hyrule Field}
-	class 014600 todo;
+	014500 -->
+	014510[Fire Arrows]
+	click 014510 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014510_FireArrows"
+	014510 --> 014600
+	
+	014600{Hyrule Field} --> 014610
 	click 014600 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014600_HyruleField"
 	
-	014600 --> 
+	subgraph Kakariko_40 [Kakariko Village]
+		014610[Kakariko is Burning]
+		click 014610 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/014610_ShadowSong"
+	end
+	class Kakariko_40 town;
+	
+	014610 --> 
 	TimeTravel_02@{ shape: hourglass, label: "." }
 	
 	%% ------- Bottom of the Well ------- %%
 	
 	TimeTravel_02 --> 
 	
-	015000[Back in Time] --> 015050
+	015000[Back in Time] --> 015010
 	class 015000 todo;
 	click 015000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015000_Child02"
 	
 	subgraph Kakariko_61 [Kakariko Village]
-		015050[Before Ruining This Man's Life] -- Song of Storms --> 015100
-		class 015050 todo;
-		click 015050 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015050_BeforeStorms"
+		015010[Royal Family's Grave] --> 015050
+		click 015010 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015010_BeforeSuns"
 		
-		015100[Song of Storms] --> 015200
-		class 015100 todo;
-		click 015100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015100_StormsSong"
+		015050[Sun's Song] --> 015100
+		click 015050 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015050_AfterSuns"
+		
+		015100[Before Ruining This Man's Life] -- Song of Storms --> 015150
+		click 015100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015100_BeforeStorms"
+		
+		015150[Song of Storms] --> 015200
+		click 015150 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015150_StormsSong"
 		
 		subgraph Well_60 [Bottom of the Well]
 			015200[Bottom of the Well]
-			class 015200 todo;
 			click 015200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015200_BotW"
 			
 			015200-->
 			015250[Lenses of Truth]
-			class 015250 todo;
-			click 015250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015250_BotW"
+			click 015250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015250_LensesTruth"
 		end
 		
 	end
@@ -824,35 +829,31 @@ flowchart TD
 	
 	015250--> 
 	015900{Hyrule Field}
-	class 015900 todo;
 	click 015900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015900_HyruleField"
 	
 	015900 -->
 	TimeTravel_03@{ shape: hourglass, label: "." }
 	
 	TimeTravel_03 --> 
-	015910[Back to the Future] --> 016000
-	class 015910 todo;
+	015910[Back to the Future]
 	click 015910 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015910_Adult02"
 	
 	%% ------- Shadow Temple ------- %%
 	
+	015910 --> 016100
 	subgraph Kakariko_60 [Kakariko Village]
-		016000[Kakariko is Burning] --> 016100
-		class 016000 todo;
-		click 016000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016000_ShadowSong"
+		%% 016000[Kakariko is Burning] --> 016100
+		%% class 016000 todo;
+		%% click 016000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016000_ShadowSong"
 		
 		subgraph Shadow_01 [Shadow Temple]
 			016100[Shadow Temple] --> 016200
-			class 016100 todo;
 			click 016100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016100_ShadowStart"
 			
 			016200[Hover Boots] --> 016300
-			class 016200 todo;
 			click 016200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016200_HoverBoots"
 			
 			016300[The Shadow Ship Awaits] --> 016350
-			class 016300 todo;
 			click 016300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/016300_PreShadowShip"
 			
 			016350[Deep Shadow] --> 016500
