@@ -22,6 +22,7 @@ flowchart LR
 flowchart TD
 	classDef default fill:#008a1e,color:white;
 	classDef todo stroke-dasharray: 5 5,color:gray,fill:#FFFFFF88;
+	classDef invalid fill:#9b5602;
 	
 	classDef castle       fill: #414141,color:white;
 	classDef town         fill: #503e2d,color:white;
@@ -218,11 +219,11 @@ flowchart TD
 	class GoronCity_02 town;
 	004210 --> 004220
 		
-	subgraph Kakariko_02 [Kakariko Village]
+	subgraph Kakariko_12 [Kakariko Village]
 		004220[Atop the Village Roof]
 		click 004220 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004220_Rooftop"
 	end
-	class Kakariko_02 town;
+	class Kakariko_12 town;
 	004220 --> 004225
 	
 	004225{Hyrule Field} --> 004230
@@ -508,25 +509,6 @@ flowchart TD
 	TimeTravel_01@{ shape: hourglass, label: "." }
 	007290 --> MasterSwordCS --> TimeTravel_01
 	
-```
-
-```mermaid
-flowchart TD
-	classDef default fill:#008a1e,color:white;
-	classDef todo stroke-dasharray: 5 5,color:gray,fill:#FFFFFF88;
-	
-	classDef castle       fill: #414141,color:white;
-	classDef town         fill: #503e2d,color:white;
-	classDef forest       fill: #005500,color:white;
-	classDef forest_town  fill: #366636,color:white;
-	classDef fire         fill: #810000,color:white;
-	classDef fire_town    fill: #813f3f,color:white;
-	classDef water        fill: #0070a3,color:white;
-	classDef water_town   fill: #558297,color:white;
-	classDef shadow       fill: #69024f,color:white;
-	classDef spirit       fill: #bcd100,color:black;
-	classDef spirit_town  fill: #d19900,color:black;
-	
 	TimeTravel_01@{ shape: hourglass, label: "." }
 	TimeTravel_01 --> 010000
 	
@@ -798,7 +780,6 @@ flowchart TD
 	TimeTravel_02 --> 
 	
 	015000[Back in Time] --> 015010
-	class 015000 todo;
 	click 015000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/015000_Child02"
 	
 	subgraph Kakariko_61 [Kakariko Village]
@@ -889,10 +870,10 @@ flowchart TD
 		017000 --> 017100
 		
 		subgraph Foretress_01 [Gerudo Fortress]
-			017100[Gerudo Fortress] --> 017190
+			017100[Gerudo Fortress] --> 017110
 			click 017100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017100_GerudoFortress"
 			
-			017110[Captured] --> 017190
+			017110[Captured] --> 017120
 			click 017110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017110_Captured"
 			
 			017120[Guard 1 Dafeated] --> 017190
@@ -938,29 +919,27 @@ flowchart TD
 			
 			TimeTravel_11@{ shape: hourglass, label: "." } -->
 			
-			017500[Adult Spirit Temple] --> 017550
+			017500[Adult Spirit Temple] --> 017530
 			click 017500 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017500_AdultSpiritStart"
 			
+			017530[The Other Iron Knuckle] --> 017550
+			click 017530 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017530_PreMiniBoss2"
+			
 			017550[Mirror Shield] --> 017800
-			class 017550 todo;
 			click 017550 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017550_MirrorShield"
 			
 			017800[Before Naburu] --> 017820
-			class 017800 todo;
 			click 017800 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017800_PreSpiritMiniBoss"
 			
 			017820[Before Twinrova] --> 017850
-			class 017820 todo;
 			click 017820 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017820_PreSpiritBoss"
 			
 			017850[After Twinrova]
-			class 017850 todo;
 			click 017850 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017850_PostSpiritBoss"
 		end
 		
 		017850 --> 
 		017900[Spirit Medallion]
-		class 017900 todo;
 		click 017900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017900_SpiritMedallion"
 	end
 	class GerudoValley_50 spirit_town;
@@ -1117,14 +1096,65 @@ flowchart TD
 	
 	
 	%% ======== Final Dungeon ======== %%
+	
+	020000{Hyrule Field} --> 020100
+	click 020000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020000_HyruleField"
+	
 	%% ------- Final Dungeon ------- %%
 	
 	subgraph CastleTown_70 [Castle Town Ruins]
-		020000[Light Arrows!]
-		class 020000 todo;
-		click 020000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020000_LightArrows"
+		020100[Light Arrows!] --> 020200
+		click 020100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020100_LightArrows"
+		
+		subgraph GannonTower_01 [Ganondorf's Castle]
+			020200[The Rainbow Bridge] --> 020300
+			click 020200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020200_RainbowBridge"
+			
+			020300[The Trials] --> 020400
+			click 020300 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020300_GanonTrails"
+			
+			020400[Double Defense] --> 020500
+			click 020400 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020400_DoubleDefense"
+			
+			020500[Trials Finished] --> 020600
+			click 020500 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020500_TrialsFinished"
+			
+			020600[Before the Final Fight]
+			click 020600 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020600_BeforeGannon"
+		end
+		020600 --> 020800
+		
+		subgraph GannonTower_02 [Collapsing Castle]
+			020800[/Top of the Crumbling Castle/] --> 020810
+			class 020800 invalid;
+			click 020800 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020800_CollapseingCastle01"
+			
+			020810[/Longshot Skip Save/] --> 020820
+			class 020810 invalid;
+			click 020810 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020810_CollapseingCastle02"
+			
+			020820[/Stalfos Fight/] --> 020830
+			class 020820 invalid;
+			click 020820 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020820_CollapseingCastle03"
+			
+			020830[/After Rizz Scene/] --> 020840
+			class 020830 invalid;
+			click 020830 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020830_CollapseingCastle04"
+			
+			020840[/The Redead Bridge/] --> 020900
+			class 020840 invalid;
+			click 020840 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020840_CollapseingCastle05"
+			
+			020900[/The Final Battle/]
+			class 020900 invalid;
+			click 020900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/020900_FinalBattle"
+		end
 	end
-	class CastleTown_70 castle;
+	class CastleTown_70,GannonTower_01,GannonTower_02 castle;
+	020900 --> 021000
+	
+	021000{Game Complete}
+	click 021000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/021000_GameComplete"
 ```
 
 
