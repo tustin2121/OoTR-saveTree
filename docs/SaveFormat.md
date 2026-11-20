@@ -10,13 +10,13 @@ Format is little-endian.
 | 0008 | A0 02 | |
 | 000A | (Length 0x1F) | All 0s |
 | 0028 | D4 3F D6 F9 | 0xF9D63FD4 |
-| 002C | int32 | 1 = ??? |
+| 002C | int32 | 1 = Learned Prelude of Light |
 | 0030 | 59 EF 4A 57 | 0x574AEF59 |
-| 0034 | int32 | 1 = ??? |
+| 0034 | int32 | 1 = Learned Nocturne of Shadow |
 | 0038 | 62 59 6B AB | 0xAB6B5962 |
-| 003C | int32 | 1 = ??? |
+| 003C | int32 | 1 = Learned Song of Storms |
 | 0040 | 91 0B B5 99 | 0x99B50B91 |
-| 0044 | int32 | 1 = ??? |
+| 0044 | int32 | 1 = Learned Minuet of Forest |
 | 0048 | D5 08 DA 1E | 0x1EDA08D5 |
 | 004C | int32 | 0 = ??? |
 | 0050 | 71 36 79 2F | 0x2F793671 |
@@ -26,17 +26,17 @@ Format is little-endian.
 | 0060 | C6 50 CA E1 | 0xE1CA50C6 |
 | 0064 | int32 | 1 = Have Water Medallion |
 | 0068 | B8 4E 46 17 | 0x17464EB8 |
-| 006C | int32 | 1 = ??? |
+| 006C | int32 | 1 = Learned Bolaro of Fire |
 | 0070 | 16 56 0A 38 | 0x380A5616 |
-| 0074 | int32 | 1 = ??? |
+| 0074 | int32 | 1 = Learned Song of Time |
 | 0078 | DC 03 5B 7C | 0x7C5B03DC |
-| 007C | int32 | 1 = ??? |
+| 007C | int32 | 1 = Talked to Keapora Geabora? |
 | 0080 | DC 8A 28 91 | 0x91288ADC |
-| 0084 | int32 | 1 = ??? |
+| 0084 | int32 | 1 = Learned Epona's Song |
 | 0088 | 4D 19 F5 85 | 0x85F5194D |
-| 008C | int32 | 1 = ??? |
+| 008C | int32 | 1 = Learned Serenade of Water |
 | 0090 | 20 45 25 83 | 0x83254520 |
-| 0094 | int32 | 1 = ??? |
+| 0094 | int32 | 1 = Learned Requium of Spirit |
 | 0098 | 08 06 DC 10 | 0x10DC0608 |
 | 009C | int32 | 1 = Have Fire Medallion |
 | 00A0 | 96 E5 9C 05 | 0x059CE596 |
@@ -54,12 +54,12 @@ Format is little-endian.
 | 00D0 | 32 70 AE 89 | 0x89AE7032 |
 | 00D4 | int32 | 1 = Have Shadow Medallion |
 | 00D8 | 27 E3 8A 23 | 0x238AE327 |
-| 00DC | int32 | 01 00 00 00 |
-| 00E0 | FC 44 20 C7 | 0x |
-| 00E4 | int32 | 00 00 00 00 |
-| 00E8 | 12 12 94 0F | 0x |
-| 00EC | int32 | 01 00 00 00 |
-| 00F0 | 6B 5F 2B FB | 0x |
+| 00DC | int32 | 1 = Learned Zelda's Lullaby |
+| 00E0 | FC 44 20 C7 | 0xC72044FC |
+| 00E4 | int32 | 1 = Finished Main Game |
+| 00E8 | 12 12 94 0F | 0x0F941212 |
+| 00EC | int32 | 1 = Learned Saria's Song |
+| 00F0 | 6B 5F 2B FB | 0xFB2B5F6B |
 | 00F4 | int32 | 01 00 00 00 |
 | 00F8 | 59 67 BD E8 | 0xE8BD6759 |
 | 00FC | int32 | Double Defense |
@@ -68,7 +68,7 @@ Format is little-endian.
 | 0108 | 00 00 00 00 | 0x |
 | 010C | int32 | 02 00 00 00 |
 | 0110 | 83 14 94 DC | 0xDC941483 |
-| 0114 | int32 | 16 00 00 00 |
+| 0114 | int32 | Gold Skultula Count |
 | 0118 | D3 40 D8 DF | 0xDFD840D3 |
 | 011C | int32 | File saved time: Month |
 | 0120 | ED 0B E5 5E | 0x5EE50BED |
@@ -84,7 +84,7 @@ Format is little-endian.
 | 0148 | 5E D7 F3 23 | 0x23F3D75E  |
 | 014C | int32 | File saved time: Hour |
 | 0150 | 47 75 55 A9 | 0xA9557547 |
-| 0154 | int32 | FE 00 00 00 (Possibly playtime?) |
+| 0154 | int32 | Rupee Count |
 | 0158 | D0 05 BD 74 | 0x74BD05D0 |
 | 015C | int32 | Max Hearts |
 | 0160 | C5 EC 55 1E | 0x1E55ECC5 |

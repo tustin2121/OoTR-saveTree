@@ -1,0 +1,60 @@
+##  Desert Colossus
+(DesertColossus/DesertColossus_Adult)
+
+Autosaved at 2026/11/18 at 15:18:26  
+Progress: [🟢🟥💙|☀️🌲🔥🌊🥷]  
+❤️ 24/40  
+❇️ 480/480
+
+![](caption.jpg)
+
+
+<!-- 47 entries:
+  0xf9d63fd4 SongLight =  1
+  0x574aef59 SongShadow =  1
+  0xab6b5962 SongStorms =  1
+  0x99b50b91 SongForest =  1
+  0x1eda08d5  =  0
+  0x2f793671  =  0
+  0x50c6bedf GoronRuby =  1
+  0xe1ca50c6 WaterMedallion =  1
+  0x17464eb8 SongFire =  1
+  0x380a5616 SongTime =  1
+  0x7c5b03dc FieldMusicStart =  1
+  0x91288adc SongEpona =  1
+  0x85f5194d SongWater =  1
+  0x83254520 SongSpirit =  1
+  0x10dc0608 FireMedallion =  1
+  0x59ce596 LightMedallion =  1
+  0xba6a1b74 SpiritMedallion =  0
+  0x25f03caa AutoSaveMarker =  1
+  0xfb112756 KokiriEmerald =  1
+  0x2f61ab71 ZoraSapphire =  1
+  0x75bd1ecf ForestMedallion =  1
+  0x89ae7032 ShadowMedallion =  1
+  0x238ae327 SongZelda =  1
+  0xc72044fc PostGame =  0
+  0xf941212 SongSaria =  1
+  0xfb2b5f6b SongSuns =  1
+  0xe8bd6759 DoubleDefense =  0
+  0xdc941483 GSCount =  18
+  0xdfd840d3 FileSaved_Month =  11
+  0x5ee50bed FileSaved_Second =  26
+  0x19f26b6a MagicCurr =  480
+  0x27853bf7 FileSaved_Minute =  18
+  0xbd46f485 FileSaved_Day =  18
+  0x943f8ec3 MagicMax =  480
+  0x23f3d75e FileSaved_Hour =  15
+  0xa9557547 RupeeCount =  192
+  0x74bd05d0 HeartsMax =  40
+  0x1e55ecc5 HeartsCurr =  24
+  0x9811a3f7 FileSaved_Year =  2026
+  0xaccbda17  =  1119121212
+  0x8b26618e  =  672
+  0xf74e0e8e  =  684
+  0xcccc6cd  =  748
+  0x47c0901e  =  812
+  0x63696a32  =  1392
+  0x51c58419  =  0
+  0x26f3523b  =  0
+-->

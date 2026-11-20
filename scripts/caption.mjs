@@ -28,6 +28,24 @@ const INFO = {
 	MagicMax:         0x943F8EC3,
 	MagicCurr:        0x19F26B6A,
 	DoubleDefense:    0xE8BD6759,
+	RupeeCount:       0xA9557547,
+	GSCount:          0xDC941483,
+	FieldMusicStart:  0x7C5B03DC, // Talked with Keapora Geapbora
+	PostGame:         0xC72044FC,
+	
+	SongZelda:        0x238AE327,
+	SongSaria:        0x0F941212,
+	SongEpona:        0x91288ADC,
+	SongSuns:         0xFB2B5F6B,
+	SongTime:         0x380A5616,
+	SongStorms:       0xAB6B5962,
+	SongScarecrow:    0x00000000,
+	SongForest:       0x99B50B91,
+	SongFire:         0x17464EB8,
+	SongWater:        0x85F5194D,
+	SongLight:        0xF9D63FD4,
+	SongShadow:       0x574AEF59,
+	SongSpirit:       0x83254520,
 	
 	AutoSaveMarker:   0x25F03CAA,
 };
@@ -103,7 +121,7 @@ for (const entry of await FS.readdir(dir, { withFileTypes: true })) {
 	} catch (error) {
 		if (error.code !== "ENOENT") throw error;
 	}
-	if (numFilesProcessed > 5) break;
+	// if (numFilesProcessed > 5) break;
 }
 
 /**
