@@ -219,11 +219,11 @@ flowchart TD
 	class GoronCity_02 town;
 	004210 --> 004220
 		
-	subgraph Kakariko_12 [Kakariko Village]
+	subgraph Kakariko_02 [Kakariko Village]
 		004220[Atop the Village Roof]
 		click 004220 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/004220_Rooftop"
 	end
-	class Kakariko_12 town;
+	class Kakariko_02 town;
 	004220 --> 004225
 	
 	004225{Hyrule Field} --> 004230
@@ -508,6 +508,26 @@ flowchart TD
 	style MasterSwordCS fill:gray;
 	TimeTravel_01@{ shape: hourglass, label: "." }
 	007290 --> MasterSwordCS --> TimeTravel_01
+	
+```
+
+```mermaid
+flowchart TD
+	classDef default fill:#008a1e,color:white;
+	classDef todo stroke-dasharray: 5 5,color:gray,fill:#FFFFFF88;
+	classDef invalid fill:#9b5602;
+	
+	classDef castle       fill: #414141,color:white;
+	classDef town         fill: #503e2d,color:white;
+	classDef forest       fill: #005500,color:white;
+	classDef forest_town  fill: #366636,color:white;
+	classDef fire         fill: #810000,color:white;
+	classDef fire_town    fill: #813f3f,color:white;
+	classDef water        fill: #0070a3,color:white;
+	classDef water_town   fill: #558297,color:white;
+	classDef shadow       fill: #69024f,color:white;
+	classDef spirit       fill: #bcd100,color:black;
+	classDef spirit_town  fill: #d19900,color:black;
 	
 	TimeTravel_01@{ shape: hourglass, label: "." }
 	TimeTravel_01 --> 010000
