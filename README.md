@@ -1,19 +1,25 @@
 # Ocarina of Time Remake Save Tree
-For the purposes of flag research, I'm going to start making a save tree (eg, a branching timeline of saves, not unlike what you'd see in Papers Please), so someone can import a save from any part of the game and test from there.
+This is a branching timeline of save files for the Ocarina of Time Remake. If you're ever in need of a save at a specific point in the game, this repo has got you covered. See [the graph](GRAPH.md) for the tree of saves. 
 
-It looks like the game saves are as such:
+To use these saves, find where your game's saves are being kept. The folder structure should look something like this:
 ```
-- slot_00 (every slot has the following:)
-   - caption.sav (37.4kb)
-   - progress.sav (117kb)
-- slot_01
-- slot_02
-- slot_03
-- slot_04
-- slot_05
 - account.sav
 - option.sav
+- slot_00/ (every slot has the following:)
+   - caption.sav (37.4kb)
+   - progress.sav (117kb-137kb)
+- slot_01/
+- slot_02/
+- slot_03/
+- slot_04/
+- slot_05/
 ```
-So every save slot only has two file needed for a save slot, so this project will only keep those two files per save. Repo Link: [to come]
 
-Incidentally, if anyone has graphing software in mind to help visualize the save tree in the repo, please feel free to suggest. The preview image is a mermaid mockup. I personally like Obsidian's canvases, but I don't know if they can be displayed easily on github.
+In order to use a save, choose one of the slots and replace the `caption.sav` and `progress.sav` files inside it. Your imported slot will be the last in the load list in-game, since the game sorts the list by date.
+
+The `caption.sav` file is what the game reads to display in the load file list. It contains display info for the save and the thumbnail displayed. (For more in depth info, see [the docs](docs/SaveFormat.md).)
+
+The `progress.sav` file is the actual save data to be loaded.
+
+Note: this repo has a few saves that are from the middle of the collapse sequence. These are the game's internal temporary saves it makes automatically as you descend the tower, so if you die during the sequence, you don't have to start over from before Gannondorf. These saves don't have a caption file because the temporary saves are never seen by the player. They haven't been tested (yet) to see if they'll load up mid-collapse.
+
