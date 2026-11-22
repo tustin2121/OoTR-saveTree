@@ -1,7 +1,7 @@
-##  Hyrule Field
+##  Ingo Ranch
 (HyruleField/HyruleField_Adult)
 
-Manually saved at 2026/11/22 at 0:28:18  
+Manually saved at 2026/11/22 at 0:53:15  
 Progress: [🟢🟥💙|💡]   
 ❤️ 24/24  
 ❇️ 240/240  
@@ -41,9 +41,9 @@ Songs: [💤🌲🕔️|]
   0xe8bd6759 DoubleDefense =  0
   0xdc941483 GSCount =  6
   0xdfd840d3 FileSaved_Month =  11
-  0x5ee50bed FileSaved_Second =  18
+  0x5ee50bed FileSaved_Second =  15
   0x19f26b6a MagicCurr =  240
-  0x27853bf7 FileSaved_Minute =  28
+  0x27853bf7 FileSaved_Minute =  53
   0xbd46f485 FileSaved_Day =  22
   0x943f8ec3 MagicMax =  240
   0x23f3d75e FileSaved_Hour =  0
@@ -51,7 +51,7 @@ Songs: [💤🌲🕔️|]
   0x74bd05d0 HeartsMax =  24
   0x1e55ecc5 HeartsCurr =  24
   0x9811a3f7 FileSaved_Year =  2026
-  0xaccbda17  =  1103735120
+  0xaccbda17  =  3238490239
   0x8b26618e  =  672
   0xf74e0e8e  =  684
   0xcccc6cd  =  748

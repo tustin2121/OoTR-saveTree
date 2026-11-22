@@ -51,7 +51,7 @@ const INFO = {
 };
 const reverseInfo = new Map(Object.entries(INFO).map(([x,y])=>[y,x]));
 
-const dir = PATH.resolve("../saves");
+const dir = process.argv[2] ?? PATH.resolve("../saves");
 
 let numFilesProcessed = 0;
 for (const entry of await FS.readdir(dir, { withFileTypes: true })) {
