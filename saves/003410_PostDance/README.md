@@ -6,7 +6,8 @@ Progress: [🟢|]
 ❤️ 12/16  
 
 ![](caption.jpg)
-
+Songs: [💤🌲|]  
+💀 3 💰️ 24 
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

@@ -2,12 +2,13 @@
 (GerudoTrainingGround/GerudoTrainingGround)
 
 Autosaved at 2026/11/18 at 14:23:33  
-Progress: [🟢🟥💙|☀️🌲🔥🌊🥷]  
+Progress: [🟢🟥💙|💡🌲🔥🌊🥷]  
 ❤️ 36/40  
 ❇️ 480/480
 
 ![](caption.jpg)
-
+Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦]  
+💀 17 💰️ 470 
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

@@ -2,12 +2,13 @@
 (GerudoFortress/GerudoFortress_Adult)
 
 Autosaved at 2026/11/18 at 14:03:24  
-Progress: [🟢🟥💙|☀️🌲🔥🌊🥷]  
+Progress: [🟢🟥💙|💡🌲🔥🌊🥷]  
 ❤️ 40/40  
 ❇️ 480/480
 
 ![](caption.jpg)
-
+Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦]  
+💀 17 💰️ 500 
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

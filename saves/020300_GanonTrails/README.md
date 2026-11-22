@@ -2,12 +2,13 @@
 (InsideGanonCastle/InsideGanonCastle)
 
 Autosaved at 2026/11/19 at 19:15:52  
-Progress: [🟢🟥💙|☀️🌲🔥🌊🥷👻]  
+Progress: [🟢🟥💙|💡🌲🔥🌊🥷👻]  
 ❤️ 42/44  
 ❇️ 480/480
 
 ![](caption.jpg)
-
+Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦🏜️]  
+💀 22 💰️ 295 
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

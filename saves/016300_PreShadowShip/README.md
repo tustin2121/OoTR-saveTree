@@ -2,12 +2,13 @@
 (ShadowTemple/ShadowTemple)
 
 Manually saved at 2026/11/17 at 23:51:24  
-Progress: [🟢🟥💙|☀️🌲🔥🌊]  
+Progress: [🟢🟥💙|💡🌲🔥🌊]  
 ❤️ 26/36  
 ❇️ 234/480
 
 ![](caption.jpg)
-
+Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦]  
+💀 16 💰️ 464 
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

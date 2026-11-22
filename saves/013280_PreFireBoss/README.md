@@ -2,12 +2,13 @@
 (FireTemple/FireTemple)
 
 Manually saved at 2026/11/16 at 23:05:55  
-Progress: [🟢🟥💙|☀️🌲]  
+Progress: [🟢🟥💙|💡🌲]  
 ❤️ 28/28  
 ❇️ 180/240
 
 ![](caption.jpg)
-
+Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋]  
+💀 9 💰️ 176 
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

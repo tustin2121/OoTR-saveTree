@@ -2,12 +2,13 @@
 (BottomOfTheWell/BottomOfTheWell)
 
 Autosaved at 2026/11/17 at 23:06:28  
-Progress: [🟢🟥💙|☀️🌲🔥🌊]  
+Progress: [🟢🟥💙|💡🌲🔥🌊]  
 ❤️ 33/36  
 ❇️ 480/480
 
 ![](caption.jpg)
-
+Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦]  
+💀 15 💰️ 368 
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

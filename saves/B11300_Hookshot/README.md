@@ -2,12 +2,13 @@
 (Graveyard/Graveyard_Adult)
 
 Autosaved at 2026/11/15 at 15:22:37  
-Progress: [🟢🟥💙|☀️]  
+Progress: [🟢🟥💙|💡]  
 ❤️ 24/24  
 ❇️ 240/240
 
 ![](caption.jpg)
-
+Songs: [💤🌲🕔️|]  
+💀 5 💰️ 35 
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

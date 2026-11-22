@@ -2,12 +2,13 @@
 (ZoraDomain/ZoraDomain_Adult)
 
 Autosaved at 2026/11/16 at 23:36:57  
-Progress: [🟢🟥💙|☀️🌲🔥]  
+Progress: [🟢🟥💙|💡🌲🔥]  
 ❤️ 32/32  
 ❇️ 480/480
 
 ![](caption.jpg)
-
+Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋]  
+💀 11 💰️ 245 
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1
