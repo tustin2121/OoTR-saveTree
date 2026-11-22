@@ -2,13 +2,14 @@
 (KakarikoVillage/KakarikoVillage_Adult_Alternative)
 
 Autosaved at 2026/11/17 at 22:27:35  
-Progress: [🟢🟥💙|💡🌲🔥🌊]  
+Progress: [🟢🟥💙|💡🌲🔥🌊]   
 ❤️ 36/36  
-❇️ 360/480
+❇️ 360/480  
+💀 14 💰️ 377  
+Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋🛶🪦]  
 
 ![](caption.jpg)
-Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋🛶🪦]  
-💀 14 💰️ 377 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

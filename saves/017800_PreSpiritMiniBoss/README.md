@@ -2,13 +2,14 @@
 (SpiritTemple/SpiritTemple)
 
 Manually saved at 2026/11/19 at 18:22:57  
-Progress: [🟢🟥💙|💡🌲🔥🌊🥷]  
+Progress: [🟢🟥💙|💡🌲🔥🌊🥷]   
 ❤️ 40/40  
-❇️ 362/480
+❇️ 362/480  
+💀 22 💰️ 293  
+Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦🏜️]  
 
 ![](caption.jpg)
-Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦🏜️]  
-💀 22 💰️ 293 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

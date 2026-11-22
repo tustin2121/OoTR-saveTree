@@ -2,12 +2,13 @@
 (InsideTheDekuTree/InsideTheDekuTree)
 
 Autosaved at 2026/11/14 at 13:51:00  
-Progress: [|]  
+Progress: [|]   
 ❤️ 12/12  
+💀 1 💰️ 17  
+Songs: [|]  
 
 ![](caption.jpg)
-Songs: [|]  
-💀 1 💰️ 17 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

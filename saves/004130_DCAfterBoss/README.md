@@ -2,12 +2,13 @@
 (DodongoCavern/DodongoCavern)
 
 Autosaved at 2026/11/14 at 20:25:21  
-Progress: [🟢|]  
+Progress: [🟢|]   
 ❤️ 9/16  
+💀 4 💰️ 54  
+Songs: [💤🌲|]  
 
 ![](caption.jpg)
-Songs: [💤🌲|]  
-💀 4 💰️ 54 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

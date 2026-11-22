@@ -2,13 +2,14 @@
 (FireTemple/FireTemple)
 
 Autosaved at 2026/11/16 at 21:22:04  
-Progress: [🟢🟥💙|💡🌲]  
+Progress: [🟢🟥💙|💡🌲]   
 ❤️ 28/28  
-❇️ 240/240
+❇️ 240/240  
+💀 7 💰️ 196  
+Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋]  
 
 ![](caption.jpg)
-Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋]  
-💀 7 💰️ 196 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

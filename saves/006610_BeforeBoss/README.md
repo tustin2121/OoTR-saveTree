@@ -2,13 +2,14 @@
 (InsideJabuJabuBelly/InsideJabuJabuBelly)
 
 Manually saved at 2026/11/15 at 11:20:36  
-Progress: [🟢🟥|]  
+Progress: [🟢🟥|]   
 ❤️ 20/20  
-❇️ 180/240
+❇️ 180/240  
+💀 5 💰️ 35  
+Songs: [💤🌲|]  
 
 ![](caption.jpg)
-Songs: [💤🌲|]  
-💀 5 💰️ 35 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

@@ -2,13 +2,14 @@
 (ZoraDomain/ZoraDomain_Child)
 
 Autosaved at 2026/11/15 at 0:03:35  
-Progress: [🟢🟥|]  
+Progress: [🟢🟥|]   
 ❤️ 20/20  
-❇️ 240/240
+❇️ 240/240  
+💀 4 💰️ 200  
+Songs: [💤🌲|]  
 
 ![](caption.jpg)
-Songs: [💤🌲|]  
-💀 4 💰️ 200 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

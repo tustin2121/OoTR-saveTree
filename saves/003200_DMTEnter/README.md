@@ -2,12 +2,13 @@
 (DeathMountainTrail/DeathMountainTrail_Child)
 
 Autosaved at 2026/11/14 at 19:18:08  
-Progress: [🟢|]  
+Progress: [🟢|]   
 ❤️ 16/16  
+💀 3 💰️ 20  
+Songs: [💤|]  
 
 ![](caption.jpg)
-Songs: [💤|]  
-💀 3 💰️ 20 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

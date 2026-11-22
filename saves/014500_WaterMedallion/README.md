@@ -2,13 +2,14 @@
 (HyruleField/HyruleField_Adult)
 
 Autosaved at 2026/11/17 at 21:58:41  
-Progress: [🟢🟥💙|💡🌲🔥🌊]  
+Progress: [🟢🟥💙|💡🌲🔥🌊]   
 ❤️ 36/36  
-❇️ 480/480
+❇️ 480/480  
+💀 14 💰️ 348  
+Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋🛶]  
 
 ![](caption.jpg)
-Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋🛶]  
-💀 14 💰️ 348 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

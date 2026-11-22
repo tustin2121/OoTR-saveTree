@@ -2,12 +2,13 @@
 (KokiriForest/KokiriForest_Child)
 
 Manually saved at 2026/11/14 at 16:25:36  
-Progress: [🟢|]  
+Progress: [🟢|]   
 ❤️ 16/16  
+💀 1 💰️ 17  
+Songs: [|]  
 
 ![](caption.jpg)
-Songs: [|]  
-💀 1 💰️ 17 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

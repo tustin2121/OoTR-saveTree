@@ -2,12 +2,13 @@
 (GoronCity/GoronCity_Child)
 
 Autosaved at 2026/11/14 at 19:24:28  
-Progress: [🟢|]  
+Progress: [🟢|]   
 ❤️ 14/16  
+💀 3 💰️ 24  
+Songs: [💤|]  
 
 ![](caption.jpg)
-Songs: [💤|]  
-💀 3 💰️ 24 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

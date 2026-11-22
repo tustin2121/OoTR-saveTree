@@ -2,13 +2,14 @@
 (ForestTemple/ForestTemple)
 
 Autosaved at 2026/11/16 at 19:21:19  
-Progress: [🟢🟥💙|💡]  
+Progress: [🟢🟥💙|💡]   
 ❤️ 9/24  
-❇️ 180/240
+❇️ 180/240  
+💀 6 💰️ 200  
+Songs: [💤🌲🐴🕔️⛈️|🌲]  
 
 ![](caption.jpg)
-Songs: [💤🌲🐴🕔️⛈️|🌲]  
-💀 6 💰️ 200 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

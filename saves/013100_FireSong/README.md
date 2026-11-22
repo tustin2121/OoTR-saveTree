@@ -2,13 +2,14 @@
 (DeathMountainCrater/DeathMountainCrater_Adult)
 
 Autosaved at 2026/11/16 at 20:00:55  
-Progress: [🟢🟥💙|💡🌲]  
+Progress: [🟢🟥💙|💡🌲]   
 ❤️ 28/28  
-❇️ 240/240
+❇️ 240/240  
+💀 6 💰️ 155  
+Songs: [💤🌲🐴🕔️⛈️|🌲🌋]  
 
 ![](caption.jpg)
-Songs: [💤🌲🐴🕔️⛈️|🌲🌋]  
-💀 6 💰️ 155 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

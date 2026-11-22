@@ -2,12 +2,13 @@
 (HyruleField/HyruleField_Child)
 
 Autosaved at 2026/11/20 at 23:42:25  
-Progress: [|]  
+Progress: [|]   
 ❤️ 12/12  
+💀 0 💰️ 7  
+Songs: [|]  
 
 ![](caption.jpg)
-Songs: [|]  
-💀 0 💰️ 7 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

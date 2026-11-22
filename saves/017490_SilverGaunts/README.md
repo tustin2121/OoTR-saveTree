@@ -2,13 +2,14 @@
 (DesertColossus/DesertColossus_Child)
 
 Autosaved at 2026/11/18 at 19:51:13  
-Progress: [🟢🟥💙|💡🌲🔥🌊🥷]  
+Progress: [🟢🟥💙|💡🌲🔥🌊🥷]   
 ❤️ 22/40  
-❇️ 292/480
+❇️ 292/480  
+💀 21 💰️ 241  
+Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦🏜️]  
 
 ![](caption.jpg)
-Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦🏜️]  
-💀 21 💰️ 241 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

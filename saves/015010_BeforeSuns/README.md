@@ -2,13 +2,14 @@
 (Graveyard/Graveyard_Child)
 
 Autosaved at 2026/11/17 at 22:47:17  
-Progress: [🟢🟥💙|💡🌲🔥🌊]  
+Progress: [🟢🟥💙|💡🌲🔥🌊]   
 ❤️ 33/36  
-❇️ 420/480
+❇️ 420/480  
+💀 15 💰️ 367  
+Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋🛶🪦]  
 
 ![](caption.jpg)
-Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋🛶🪦]  
-💀 15 💰️ 367 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

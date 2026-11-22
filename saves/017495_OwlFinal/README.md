@@ -2,13 +2,14 @@
 (Market/Market_Child)
 
 Autosaved at 2026/11/18 at 20:19:05  
-Progress: [🟢🟥💙|💡🌲🔥🌊🥷]  
+Progress: [🟢🟥💙|💡🌲🔥🌊🥷]   
 ❤️ 40/40  
-❇️ 264/480
+❇️ 264/480  
+💀 21 💰️ 250  
+Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦🏜️]  
 
 ![](caption.jpg)
-Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦🏜️]  
-💀 21 💰️ 250 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

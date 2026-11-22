@@ -2,13 +2,14 @@
 (HyruleCastle/HyruleCastle)
 
 Autosaved at 2026/11/14 at 23:36:23  
-Progress: [🟢🟥|]  
+Progress: [🟢🟥|]   
 ❤️ 20/20  
-❇️ 240/240
+❇️ 240/240  
+💀 4 💰️ 200  
+Songs: [💤🌲|]  
 
 ![](caption.jpg)
-Songs: [💤🌲|]  
-💀 4 💰️ 200 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

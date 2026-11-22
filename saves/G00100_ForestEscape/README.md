@@ -2,12 +2,13 @@
 (ZoraRiver/ZoraRiver_Child)
 
 Manually saved at 2026/11/20 at 23:34:48  
-Progress: [|]  
+Progress: [|]   
 ❤️ 12/12  
+💀 0 💰️ 7  
+Songs: [|]  
 
 ![](caption.jpg)
-Songs: [|]  
-💀 0 💰️ 7 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

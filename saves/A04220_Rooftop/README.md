@@ -2,13 +2,14 @@
 (KakarikoVillage/KakarikoVillage_Child)
 
 Autosaved at 2026/11/21 at 20:01:54  
-Progress: [🟢|]  
+Progress: [🟢|]   
 ❤️ 16/16  
-❇️ 240/240
+❇️ 240/240  
+💀 4 💰️ 32  
+Songs: [💤🌲|]  
 
 ![](caption.jpg)
-Songs: [💤🌲|]  
-💀 4 💰️ 32 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

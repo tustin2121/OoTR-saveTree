@@ -2,13 +2,14 @@
 (LostWood/LostWood_Adult)
 
 Autosaved at 2026/11/15 at 16:26:21  
-Progress: [🟢🟥💙|💡]  
+Progress: [🟢🟥💙|💡]   
 ❤️ 16/24  
-❇️ 240/240
+❇️ 240/240  
+💀 5 💰️ 36  
+Songs: [💤🌲🕔️⛈️|]  
 
 ![](caption.jpg)
-Songs: [💤🌲🕔️⛈️|]  
-💀 5 💰️ 36 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  0

@@ -2,13 +2,14 @@
 (IceCavern/IceCavern)
 
 Autosaved at 2026/11/17 at 0:07:57  
-Progress: [🟢🟥💙|💡🌲🔥]  
+Progress: [🟢🟥💙|💡🌲🔥]   
 ❤️ 14/32  
-❇️ 480/480
+❇️ 480/480  
+💀 11 💰️ 290  
+Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋]  
 
 ![](caption.jpg)
-Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋]  
-💀 11 💰️ 290 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

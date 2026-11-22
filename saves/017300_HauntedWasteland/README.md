@@ -2,13 +2,14 @@
 (HountedWasteland/HountedWasteland_Adult)
 
 Autosaved at 2026/11/18 at 15:04:02  
-Progress: [🟢🟥💙|💡🌲🔥🌊🥷]  
+Progress: [🟢🟥💙|💡🌲🔥🌊🥷]   
 ❤️ 26/40  
-❇️ 300/480
+❇️ 300/480  
+💀 17 💰️ 241  
+Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦]  
 
 ![](caption.jpg)
-Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦]  
-💀 17 💰️ 241 
+
 
 <!-- 47 entries:
   0xf9d63fd4 SongLight =  1

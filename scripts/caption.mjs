@@ -99,13 +99,12 @@ for (const entry of await FS.readdir(dir, { withFileTypes: true })) {
 			if (infoMap.get(INFO.WaterMedallion)) readme += `🌊`;
 			if (infoMap.get(INFO.ShadowMedallion)) readme += `🥷`;
 			if (infoMap.get(INFO.SpiritMedallion)) readme += `👻`;
-			readme += `]  \n`;
+			readme += `] `;
 			if (infoMap.get(INFO.PostGame)) readme += `⭐️`;
+			readme += `  \n`
 			readme += `${infoMap.get(INFO.DoubleDefense)?'💗':'❤️'} ${infoMap.get(INFO.HeartsCurr)}/${infoMap.get(INFO.HeartsMax)}  \n`;
-			if (infoMap.get(INFO.MagicMax) > 0) readme += `❇️ ${infoMap.get(INFO.MagicCurr)}/${infoMap.get(INFO.MagicMax)}\n`;
-			
-			readme += `\n![](${THUMBNAIL})\n`;
-			
+			if (infoMap.get(INFO.MagicMax) > 0) readme += `❇️ ${infoMap.get(INFO.MagicCurr)}/${infoMap.get(INFO.MagicMax)}  \n`;
+			readme += `💀 ${infoMap.get(INFO.GSCount)} 💰️ ${infoMap.get(INFO.RupeeCount)}  \n`;
 			readme += `Songs: [`;
 			if (infoMap.get(INFO.SongZelda)) readme += `💤`;
 			if (infoMap.get(INFO.SongSaria)) readme += `🌲`;
@@ -123,9 +122,7 @@ for (const entry of await FS.readdir(dir, { withFileTypes: true })) {
 			if (infoMap.get(INFO.SongSpirit)) readme += `🏜️`;
 			readme += `]  \n`;
 			
-			
-			readme += `💀 ${infoMap.get(INFO.GSCount)} 💰️ ${infoMap.get(INFO.RupeeCount)} `;
-			
+			readme += `\n![](${THUMBNAIL})\n`;
 			
 			readme += `\n\n<!-- ${infoMap.size} entries:\n`;
 			for (const [k, v] of infoMap) {
