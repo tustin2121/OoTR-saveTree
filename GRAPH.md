@@ -317,57 +317,63 @@ flowchart TD
 	
 	%% ------- Alternate Spiritual Stone Quest ------- %%
 	
-	004110 --> A04225
-	A04225{Hyrule Field} --> A04230
-	class A04225 todo;
+	004110 --> A04200
+	subgraph DeathMountain_08A [Death Mountain]
+		A04200[Before the Great Fairy] --> A04210
+		click A04200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04200_PreFairyDins"
+		
+		A04210[Got Din's Fire] 
+		click A04210 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04210_DinsFire"
+	end
+	class DeathMountain_08A fire_town;
+	
+	subgraph Kakariko_02 [Kakariko Village]
+		A04220[Atop the Village Roof]
+		click A04220 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04220_Rooftop"
+	end
+	class Kakariko_02 town;
+	
+	A04210 --> A04220 --> A04225{Hyrule Field} --> A04230
 	%% click A04225 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04225_HyruleField"
 	
 	subgraph CastleTown_02A [Hyrule Castle Town]
-		A04230[Castle Town Nighttime] --> A04240
-		class A04230 todo; 
+		A04230[Castle Town Evening] --> A04240
 		%% click A04230 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04230_CastleTown"
 		
 		subgraph Castle_02A [Hyrule Castle]
-			A04240["Castle Grounds Nighttime (ft. Malon and Talon)"] --> A04250
-			class A04240 todo; 
+			A04240["Castle Grounds Evening"] --> A04250
 			%% click A04240 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04240_CastleGrounds"
 			
 			A04250[Before the Great Fairy] --> A04260
-			class A04250 todo; 
 			%% click A04250 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04250_PreFairySpin"
 			
-			A04260[Got Spin Attack] -- Impa directs to Zora --> A04270
-			class A04260 todo; 
+			A04260[Got Spin Attack]
 			%% click A04260 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04260_SpinAttack"
-			
-			A04270[Princess Zelda at Night]
-			class A04270 todo; 
-			%% click A04270 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A04270_Zelda"
 		end
 	end
 	class CastleTown_02A town;
 	class Castle_02A castle;
-	A04270 --> A05000
+	A04260 -- Impa directs to Zora --> A05000
 	
 	subgraph ZorasRiver_01A [Zora's River]
 		A05000[Enter Zora's River] --> A05100
-		class A05000 todo; 
 		%% click A05000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A05000_ZoraRiverStart"
 		
 		A05100[Enter Zora's Domain] --> A05110
-		class A05100 todo; 
 		%% click A05100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A05100_ZDEnter"
 		
 		A05110[Silver Scale]
-		class A05110 todo; 
 		%% click A05110 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A05110_SilverScale"
 	end
 	class ZorasRiver_01A water_town;
 	
-	A05120[Lake Hylia Enter] --> A05130
-	class A05120 todo; 
+	A05120[Lake Hylia Enter] --> A05125
 	A05110 --> A05120
 	%% click A05120 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A05120_LHEnter"
+	
+	A05125[Ruto's Leter] --> A05130
+	A05110 --> A05125
+	%% click A05125 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A05125_RutoLetter"
 	
 	subgraph ZorasRiver_02A [Zora's River]
 		A05130[Before King Zora] -- Mweep Mweep Mweep Mweep --> A05140
@@ -442,24 +448,36 @@ flowchart TD
 	end
 	class DeathMountain_02A fire_town;
 	class Dodongos_02A fire;
-	A04150 -.-> 007000
+	A04150 --> A07000 -.-> 007000
+	
+	A07000["The Bridge is Up?"]
+	class A07000 todo;
+	%%click A07000 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/A07000_BeforeZeldaEscape"
 	
 	%% ------- Glitched Timeline ------- %%
 	
 	subgraph ZorasRiver_02G [Zora's River]
 		
+		G00090[Lost Woods Pond] --> G00100
+		000100 --> G00090
+		class G00090 todo;
+		click G00090 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/G00090_LostWoods"
+		
 		G00100[Forest Escape] --> G00200
-		000100 --> G00100
 		class G00100 todo;
 		click G00100 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/G00100_ForestEscape"
 		
 		G00200[Zora's Domain] --> G00210
 		class G00200 todo;
-		click G00200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/G00200_PostSaria"
+		click G00200 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/G00200_ZoraDomain"
 		
 		G00210[Silver Scale] 
 		class G00210 todo;
-		click G00210 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/G00210_PostSaria"
+		click G00210 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/G00210_SilverScale"
+		
+		G00230[Lake Hylia] 
+		class G00230 todo;
+		click G00230 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/G00230_LakeHylia"
 		
 	end
 	class ZorasRiver_02G water_town;
@@ -663,8 +681,8 @@ flowchart TD
 		012810 --> 012900
 		click 012900 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012900_ForestMedallion"
 		
-		012950[Mido Afterwards]
-		click 012950 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/012950_MidoAfterwards"
+		012950[]
+		click 012950 href ""
 	end
 	class AdultKokiri_02 forest_town;
 	class ForestTemple_01 forest;
@@ -917,7 +935,7 @@ flowchart TD
 			017400[Desert Colossus] --> 017405
 			click 017400 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017400_DesertColossus"
 			
-			017405[Requium of Spirit] --> TimeTravel_10
+			017405[Requiem of Spirit] --> TimeTravel_10
 			click 017405 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017405_SpiritSong"
 			
 			TimeTravel_10@{ shape: hourglass, label: "." } -->
@@ -934,7 +952,7 @@ flowchart TD
 			017490[Got Silver Gauntlets] --> 017495
 			click 017490 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017490_SilverGaunts"
 			
-			017495[Goodbye Large Owel] --> TimeTravel_11
+			017495[Goodbye Large Owl] --> TimeTravel_11
 			click 017495 href "https://github.com/tustin2121/OoTR-saveTree/blob/main/saves/017495_OwlFinal"
 			
 			TimeTravel_11@{ shape: hourglass, label: "." } -->
