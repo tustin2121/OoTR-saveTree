@@ -1,12 +1,68 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OOT Remake Save Manager</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/renderer.ts"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>OoTR Save View / Manager</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="libList" class="slotList">
+				<div class="slot">
+					<div class="game">
+						<img src="about:blank" />
+						<h1>Temple of Time</h1>
+						<h2>datetime</h2>
+						<span class="save-type">Autosave</span>
+					</div>
+				</div>
+				<div class="slot">
+					<div class="game">
+						<img src="about:blank" />
+						<h1>Temple of Time</h1>
+						<h2>datetime</h2>
+						<span class="save-type">Manual</span>
+						<div class="progress">
+							<div class="quest">
+								<span class="stone-forest"></span>
+								<span class="stone-fire"></span>
+								<span class="stone-water"></span>
+								<span class="medallion-light"></span>
+								<span class="medallion-forest"></span>
+								<span class="medallion-fire"></span>
+								<span class="medallion-water"></span>
+								<span class="medallion-shadow"></span>
+								<span class="medallion-spirit"></span>
+							</div>
+						</div>
+						<div class="status">
+							<span class="health">12/12</span>
+							<span class="magic">120/120</span>
+							<span class="skulls">20</span>
+							<span class="rupees">20</span>
+						</div>
+						<div class="file">Pathpath/pathpathpath</div>
+					</div>
+				</div>
+				<div class="slot"></div>
+				<div class="slot"></div>
+				<div class="slot"></div>
+			</div>
+			<div id="gameList" class="slotList">
+				<div class="slot"></div>
+				<div class="slot"></div>
+				<div class="slot"></div>
+				<div class="slot"></div>
+				<div class="slot"></div>
+				<div class="slot"></div>
+			</div>
+			<div id="status" class="statusbar"></div>
+			
+			<div class="top-lib"></div>
+			<div class="top-game"></div>
+			<!-- <div class="bot-lib"></div>
+			<div class="bot-game"></div> -->
+		</div>
+		<script type="module" src="/src/renderer.ts"></script>
+	</body>
 </html>

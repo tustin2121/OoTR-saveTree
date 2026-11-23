@@ -1,8 +1,225 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
 
-:root { font-family: Inter, sans-serif; color: #f2eedb; background: #09120d; font-synthesis: none; }
-* { box-sizing: border-box; }
-body { margin: 0; min-width: 900px; min-height: 640px; overflow: hidden; }
+@border-color: #53604e;
+@border: 1px solid @border-color;
+@brand-font: Cinzel,serif;
+
+:root { 
+	color-scheme: dark;
+	font-family: Inter, sans-serif; 
+	color: white; 
+	background: #09120d; 
+	// font-synthesis: none;
+}
+* { 
+	box-sizing: border-box;
+	scrollbar-width: thin;
+}
+button { cursor: pointer; }
+
+body { 
+	margin: 0;
+	// min-width: 900px;
+	// min-height: 640px;
+	// overflow: hidden;
+}
+
+#wrapper {
+	display: grid;
+	grid:
+		"topLeft mid topRight" 3rem
+		"midLeft mid midRight" 1fr
+		// "botLeft mid botRight" 3rem 
+		"status status status" 2rem /
+		1fr 3rem 1fr;
+	;
+	height: 100vh; 
+	background: 
+		radial-gradient(circle at 65% 35%, rgba(77,111,58,.13), transparent 34%), 
+		linear-gradient(135deg, #0d1a12, #080d0a);
+		
+	.slotList {
+		overflow-y: scroll;
+		padding: calc(1rem);
+		overflow-y: overlay;
+	}
+	#libList {
+		grid-area: midLeft;
+		border-right: @border;
+	}
+	#gameList {
+		grid-area: midRight;
+		border-left: @border;
+	}
+	.top-lib {
+		grid-area: topLeft;
+		border-right: @border;
+		border-bottom: @border;
+	}
+	.top-game {
+		grid-area: topRight;
+		border-left: @border;
+		border-bottom: @border;
+	}
+	.bot-lib {
+		grid-area: botLeft;
+	}
+	.bot-game {
+		grid-area: botRight;
+	}
+	.statusbar {
+		grid-area: status;
+		border-top: @border;
+	}
+}
+
+.slot {
+	@border-color: #937735;
+	--border: 0.25rem;
+	--corner: 1.5vw;
+	
+	margin: 1rem 2vw;
+	z-index: 0; height: 8vw;
+	font-family: @brand-font;
+	position: relative;
+	filter: drop-shadow(2px 2px 6px black);
+	
+	.game {
+		position: absolute;
+		inset: 0;
+		clip-path: @cornerPath;
+		font-size: 1.2vw;
+		// border: #937735 2px solid;
+		padding: 0.5em;
+		background-color: #775727;
+		display: grid;
+		grid:
+			"preview timestamp d1     progress" 1fr
+			"preview title     title  progress" 2fr
+			"preview status    status progress" 1fr
+			"preview path      path   progress" 1fr
+			/ 2fr 3fr 1fr 1.5fr;
+		
+		img { 
+			grid-area: preview;
+			border-right: @border-color var(--border) solid;
+			margin: -0.5em 0.5em -0.5em -0.5em;
+		}
+		h1 {
+			grid-area: title;
+			font-size: 1.3em;
+			margin: auto 0;
+			border-bottom: @border-color 1px inset;
+		}
+		h2 {
+			grid-area: timestamp;
+			font-size: 0.8em;
+			margin: auto 0;
+		}
+		.save-type {
+			grid-area: d1;
+			font-size: 0.8em;
+			background-color: #443826;
+			text-align: center;
+			border-radius: 1em;
+			vertical-align: baseline;
+			margin-block: auto;
+		}
+		.progress {
+			grid-area: progress;
+			
+			.quest {
+				display: block;
+				position: relative;
+				width: 6em; height: 5em;
+				margin-inline: auto;
+				
+				.stone-forest     { background-color: #00910c; top: calc(50% - 0.5em + 0.0em); left: calc(50% - 0.5em - 1.2em); }
+				.stone-fire       { background-color: #9c0000; top: calc(50% - 0.5em + 0.0em); left: calc(50% - 0.5em + 0.0em); }
+				.stone-water      { background-color: #0011ac; top: calc(50% - 0.5em + 0.0em); left: calc(50% - 0.5em + 1.2em); }
+				.medallion-light  { background-color: #9e9e00; top: calc(50% - 0.5em - 1.8em); left: calc(50% - 0.5em + 0.0em); }
+				.medallion-forest { background-color: #008b46; top: calc(50% - 0.5em - 1.0em); left: calc(50% - 0.5em + 2.0em); }
+				.medallion-fire   { background-color: #cc0000; top: calc(50% - 0.5em + 1.0em); left: calc(50% - 0.5em + 2.0em); }
+				.medallion-water  { background-color: #0066ff; top: calc(50% - 0.5em + 1.8em); left: calc(50% - 0.5em + 0.0em); }
+				.medallion-shadow { background-color: #c59700; top: calc(50% - 0.5em + 1.0em); left: calc(50% - 0.5em - 2.0em); }
+				.medallion-spirit { background-color: #8a388d; top: calc(50% - 0.5em - 1.0em); left: calc(50% - 0.5em - 2.0em); }
+				
+				// .stone-forest, .stone-fire, .stone-water, 
+				// .medallion-light, .medallion-forest, .medallion-fire,
+				// .medallion-water, .medallion-shadow, .medallion-spirit 
+				> span {
+					display: block;
+					position: absolute;
+					border-radius: 100%;
+					width: 1em; height: 1em;
+					border: #00000066 1px solid;
+				}
+			}
+		}
+		.status {
+			grid-area: status;
+			display: flex;
+			justify-content: space-between;
+			
+			.health::before { content: '\f004'; color: #cf0000; }
+			.magic::before  { content: '\f005'; color: #00c000; }
+			.skulls::before { content: '\f54c'; color: #d3b300; }
+			.rupees::before { content: '\f312'; color: #0034c4; transform: scaleX(0.7) rotate(90deg); }
+			// .rupees::before { content: '\f219'; color: blue; }
+			span {
+				// display: inline-block;
+				white-space: nowrap;
+				// width: 40%;
+				&::before {
+					display: inline-block;
+					font-family: 'Font Awesome 7 Free';
+					font-feature-settings: normal;
+					font-style: normal;
+					font-synthesis: none;
+					font-variant: normal;
+					font-weight: var(--fa-style, 900);
+					line-height: 1;
+					text-align: center;
+					text-rendering: auto;
+					width: var(--fa-width, 1.25em);
+					margin-inline-end: 0.15em;
+					filter: drop-shadow(0px 0px 1px black);
+				}
+			}
+		}
+		
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0; z-index: -1;
+			background: #937735;
+			--g1: #000 var(--border),#0000 0 calc(100% - var(--border)),#000 0;
+			--g2:	#0000   calc(0.707*var(--corner)), 
+					#000  0 calc(0.707*var(--corner) + var(--border)),
+					#0000 0 calc(100% - 0.707*var(--corner) - var(--border)),
+					#000  0 calc(100% - 0.707*var(--corner)),
+					#0000 0;
+			mask: 	linear-gradient(45deg ,var(--g2)),
+					linear-gradient(-45deg,var(--g2)),
+					linear-gradient(90deg ,var(--g1)) 50%/100% calc(100% - 2*var(--corner)) no-repeat,
+					linear-gradient(180deg,var(--g1)) 50%/calc(100% - 2*var(--corner)) 100% no-repeat;
+
+		}
+	}
+	
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		clip-path: @cornerPath;
+		// border: #937735 2px solid;
+		background-color: #443826;
+		z-index: -1;
+	}
+}
+
+
+/*
 button, input { font: inherit; }
 button { cursor: pointer; }
 .shell { height: 100vh; background: radial-gradient(circle at 65% 35%, rgba(77,111,58,.13), transparent 34%), linear-gradient(135deg, #0d1a12, #080d0a); }
@@ -27,3 +244,17 @@ button { cursor: pointer; }
 .install-button { width:100%;border:1px solid #87935c;background:linear-gradient(#5a6635,#384523);color:#f4f1cf;height:42px;font-size:10px;font-weight:800;letter-spacing:.08em;box-shadow:0 6px 16px rgba(0,0,0,.25)}.install-button:disabled{cursor:not-allowed;background:#242923;border-color:#444a40;color:#777c70}
 .slots { border-left:1px solid #31412f;background:rgba(8,14,10,.78);padding:18px 14px }.section-title{height:52px;display:flex;flex-direction:column;gap:4px;padding:4px 8px}.slot-card{height:84px;margin:7px 0;border:1px solid #313e31;background:#101711;display:grid;grid-template-columns:18px 46px 1fr;align-items:center;padding:8px;gap:8px}.slot-card:has(input:checked){border-color:#85895c;background:#1b2618}.slot-card input{position:absolute;opacity:0}.slot-radio{width:11px;height:11px;border-radius:50%;border:1px solid #777d63}.slot-card:has(input:checked) .slot-radio{background:#c0bd86;box-shadow:0 0 8px rgba(192,189,134,.5)}.slot-number{width:44px;height:44px;border:1px solid #56604d;display:grid;place-items:center;font-family:Cinzel,serif;color:#bdbd9c}.slot-info{display:flex;flex-direction:column;gap:6px}.slot-info strong{font-size:10px}.slot-info small{font-size:8px;color:#858c78}
 ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-thumb{background:#46533f}@media(max-height:700px){.topbar{height:60px}.game-strip{height:54px}.layout{height:calc(100vh - 114px)}.slot-card{height:76px}.detail-copy p{min-height:40px}}
+*/
+
+
+
+@cornerPath: polygon(
+	var(--corner)              0%, 
+	calc(100% - var(--corner)) 0%, 
+	100% var(--corner),              
+	100% calc(100% - var(--corner)), 
+	calc(100% - var(--corner)) 100%, 
+	var(--corner)              100%, 
+	0% calc(100% - var(--corner)), 
+	0% var(--corner)               
+);
