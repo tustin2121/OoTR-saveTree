@@ -1,5 +1,7 @@
 # Ocarina of Time Remake Save Tree
-This is a branching timeline of save files for the Ocarina of Time Remake. If you're ever in need of a save at a specific point in the game, this repo has got you covered. See [the graph](GRAPH.md) for the tree of saves. 
+This is a branching timeline of save files for the Ocarina of Time Remake. If you're ever in need of a save at a specific point in the game, this repo has got you covered.
+- For main game progression as Nintended™, see [the main graph](saves/main/README.md).
+- For any% saves, see [any%](saves/any-percent/README.md).
 
 To use these saves, find where your game's saves are being kept. The folder structure should look something like this:
 ```
