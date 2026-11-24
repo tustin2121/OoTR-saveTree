@@ -53,11 +53,20 @@ const reverseInfo = new Map(Object.entries(INFO).map(([x,y])=>[y,x]));
 
 const dir = process.argv[2] ?? PATH.resolve("../saves");
 
+let numFilesSkipped = 0;
+let numFilesErrored = 0;
 let numFilesProcessed = 0;
-for (const entry of await FS.readdir(dir, { withFileTypes: true })) {
-	if (!entry.isDirectory()) continue;
-	const folder = PATH.join(dir, entry.name);
-	const caption = PATH.join(folder, "caption.sav");
+for (const entry of await FS.readdir(dir, { withFileTypes: true, recursive: true })) {
+	// if (!entry.isDirectory()) continue;
+	// const folder = PATH.join(dir, entry.name);
+	// const caption = PATH.join(folder, "caption.sav");
+	if (!entry.isFile() || entry.name !== 'caption.sav') {
+		// console.log(`Skipping ${entry.parentPath}/${entry.name}`);
+		numFilesSkipped++;
+		continue;
+	}
+	const folder = PATH.join(entry.parentPath);
+	const caption = PATH.join(folder, entry.name);
 	
 	try {
 		const data = await FS.readFile(caption);
@@ -134,12 +143,22 @@ for (const entry of await FS.readdir(dir, { withFileTypes: true })) {
 		}
 		
 		// data is a Uint8Array-compatible Buffer ready for processing.
-		console.log(`${entry.name}: ${data.length} bytes`);
+		console.log(`Processed ${caption}`);
 		numFilesProcessed++;
 	} catch (error) {
 		if (error.code !== "ENOENT") throw error;
+		console.error(`File not found: ${caption}`);
+		numFilesErrored++;
 	}
 	// if (numFilesProcessed > 5) break;
+}
+if (numFilesProcessed === 0) {
+	console.log(`Processed no files at ${dir}. Skipped ${numFilesSkipped}.`);
+}
+if (numFilesErrored > 0) {
+	console.log(`Completed with ${numFilesErrored} errors.`);
+} else {
+	console.log(`Complete.`);
 }
 
 /**
