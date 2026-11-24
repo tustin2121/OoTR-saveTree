@@ -1,0 +1,21 @@
+- [ ] Left side library of saves
+	- [ ] Choose folder for library
+	- [ ] json or yaml file for tree aspect
+	- [ ] Possibly make into tree?
+- [ ] Right side save system
+	- [ ] Menu to select type of emulator
+		- [ ] Lichii
+		- [ ] Longshot
+		- [ ] Triforce
+		- [ ] NovaOOT's OOT-PC
+		- [ ] Direct folder path to save struct
+		- [ ] Direct folder path to save slot
+
+- [ ] Right click menu on save slots
+	- [ ] "Make Manual" (makes any manual saves auto)
+	- [ ] "Make Autosave"
+	- [ ] Save to Library
+- [ ] Central selected save?
+	- [ ] Edit certain things about save?
+	- [ ] Fix or cause different glitches?
+	
