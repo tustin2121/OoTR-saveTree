@@ -1,5 +1,6 @@
 ##  Hounted Wasteland
-(HountedWasteland/HountedWasteland_Adult)
+<span style="font-size: smaller; opacity:0.6;">HountedWasteland/HountedWasteland_Adult @ (115.37, 95.30, 52.90) / 63.71&deg;
+</span>
 
 Autosaved at 2026/11/18 at 15:04:02  
 Progress: [🟢🟥💙|💡🌲🔥🌊🥷]   
@@ -51,12 +52,12 @@ Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦]
   0x74bd05d0 HeartsMax =  40
   0x1e55ecc5 HeartsCurr =  26
   0x9811a3f7 FileSaved_Year =  2026
-  0xaccbda17  =  1115608767
-  0x8b26618e  =  672
-  0xf74e0e8e  =  684
-  0xcccc6cd  =  748
+  0xaccbda17 LinkRotation =  63.709712982177734
+  0x8b26618e LinkPosition =  672
+  0xf74e0e8e MapName =  684
+  0xcccc6cd MapPath =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

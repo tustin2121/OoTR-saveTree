@@ -1,5 +1,6 @@
-##  Desert Colossus/ Desert Colossus_ Adult
-(DesertColossus)
+##  Desert Colossus
+<span style="font-size: smaller; opacity:0.6;">DesertColossus/DesertColossus_Adult @ (-139.82, 94.58, -1.03) / 84.13&deg;
+</span>
 
 Manually saved at 2026/11/22 at 22:17:06  
 Progress: [🟢|🥷]   
@@ -51,12 +52,12 @@ Songs: [💤🌲|🌲🌋]
   0x74bd05d0 HeartsMax =  16
   0x19f26b6a MagicCurr =  240
   0xa9557547 RupeeCount =  10
-  0xaccbda17  =  1118322785
-  0x8b26618e  =  672
-  0xcccc6cd  =  684
-  0xf74e0e8e  =  748
+  0xaccbda17 LinkRotation =  84.12574005126953
+  0x8b26618e LinkPosition =  672
+  0xcccc6cd MapPath =  684
+  0xf74e0e8e MapName =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

@@ -1,5 +1,6 @@
-##  Shadow Temple/ Shadow Temple
-(ShadowTemple)
+##  Shadow Temple
+<span style="font-size: smaller; opacity:0.6;">ShadowTemple/ShadowTemple @ (-71.63, 90.52, -10.15) / -90.00&deg;
+</span>
 
 Manually saved at 2026/11/21 at 22:49:04  
 Progress: [🟢|]   
@@ -51,12 +52,12 @@ Songs: [💤🌲☀️|]
   0x74bd05d0 HeartsMax =  12
   0x19f26b6a MagicCurr =  240
   0xa9557547 RupeeCount =  8
-  0xaccbda17  =  3266576360
-  0x8b26618e  =  672
-  0xcccc6cd  =  684
-  0xf74e0e8e  =  748
+  0xaccbda17 LinkRotation =  -89.99981689453125
+  0x8b26618e LinkPosition =  672
+  0xcccc6cd MapPath =  684
+  0xf74e0e8e MapName =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

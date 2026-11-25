@@ -1,5 +1,6 @@
-##  Kokiri Forest/ Kokiri Forest_ Child
-(KokiriForest)
+##  Kokiri Forest
+<span style="font-size: smaller; opacity:0.6;">KokiriForest/KokiriForest_Child @ (40.08, 112.84, -21.25) / -77.42&deg;
+</span>
 
 Manually saved at 2026/11/21 at 11:27:39  
 Progress: [|]   
@@ -50,12 +51,12 @@ Songs: [|]
   0x74bd05d0 HeartsMax =  12
   0x19f26b6a MagicCurr =  0
   0xa9557547 RupeeCount =  11
-  0xaccbda17  =  3264927858
-  0x8b26618e  =  672
-  0xcccc6cd  =  684
-  0xf74e0e8e  =  748
+  0xaccbda17 LinkRotation =  -77.42274475097656
+  0x8b26618e LinkPosition =  672
+  0xcccc6cd MapPath =  684
+  0xf74e0e8e MapName =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

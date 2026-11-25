@@ -1,5 +1,6 @@
 ##  Kakariko Village
-(KakarikoVillage/KakarikoVillage_Child)
+<span style="font-size: smaller; opacity:0.6;">KakarikoVillage/KakarikoVillage_Child @ (1.39, 104.72, 50.07) / 134.07&deg;
+</span>
 
 Manually saved at 2026/11/17 at 22:56:34  
 Progress: [🟢🟥💙|💡🌲🔥🌊]   
@@ -51,12 +52,12 @@ Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦]
   0x74bd05d0 HeartsMax =  36
   0x1e55ecc5 HeartsCurr =  33
   0x9811a3f7 FileSaved_Year =  2026
-  0xaccbda17  =  1124471285
-  0x8b26618e  =  672
-  0xf74e0e8e  =  684
-  0xcccc6cd  =  748
+  0xaccbda17 LinkRotation =  134.0701446533203
+  0x8b26618e LinkPosition =  672
+  0xf74e0e8e MapName =  684
+  0xcccc6cd MapPath =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

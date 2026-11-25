@@ -1,5 +1,6 @@
-##  Ganon Castle/ Crumbling Ganon Castle
-()
+## 
+<span style="font-size: smaller; opacity:0.6;">GanonCastle/CrumblingGanonCastle @ (-86.69, 166.76, 0.25) / 90.34&deg;
+</span>
 
 Manually saved at 2026/11/23 at 13:00:55  
 Progress: [🟢|💡🥷👻]   
@@ -51,12 +52,12 @@ Songs: [💤🌲|🌲🌋]
   0x74bd05d0 HeartsMax =  20
   0x19f26b6a MagicCurr =  177
   0xa9557547 RupeeCount =  100
-  0xaccbda17  =  1119137453
-  0x8b26618e  =  672
-  0xcccc6cd  =  684
-  0xf74e0e8e  =  748
+  0xaccbda17 LinkRotation =  90.3411636352539
+  0x8b26618e LinkPosition =  672
+  0xcccc6cd MapPath =  684
+  0xf74e0e8e MapName =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

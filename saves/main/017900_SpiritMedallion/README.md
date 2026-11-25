@@ -1,5 +1,6 @@
 ##  Desert Colossus
-(DesertColossus/DesertColossus_Adult)
+<span style="font-size: smaller; opacity:0.6;">DesertColossus/DesertColossus_Adult @ (-125.93, 94.21, 10.54) / -89.00&deg;
+</span>
 
 Autosaved at 2026/11/19 at 18:47:51  
 Progress: [🟢🟥💙|💡🌲🔥🌊🥷👻]   
@@ -51,12 +52,12 @@ Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦🏜️]
   0x74bd05d0 HeartsMax =  44
   0x1e55ecc5 HeartsCurr =  44
   0x9811a3f7 FileSaved_Year =  2026
-  0xaccbda17  =  3266445316
-  0x8b26618e  =  672
-  0xf74e0e8e  =  684
-  0xcccc6cd  =  748
+  0xaccbda17 LinkRotation =  -89.00003051757812
+  0x8b26618e LinkPosition =  672
+  0xf74e0e8e MapName =  684
+  0xcccc6cd MapPath =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

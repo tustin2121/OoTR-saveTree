@@ -1,5 +1,6 @@
 ##  Market
-(Market/Market_Adult)
+<span style="font-size: smaller; opacity:0.6;">Market/Market_Adult @ (-1.00, 102.18, 63.65) / -5.42&deg;
+</span>
 
 Autosaved at 2026/11/16 at 21:00:44  
 Progress: [🟢🟥💙|💡🌲]   
@@ -51,12 +52,12 @@ Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋]
   0x74bd05d0 HeartsMax =  28
   0x1e55ecc5 HeartsCurr =  28
   0x9811a3f7 FileSaved_Year =  2026
-  0xaccbda17  =  3232592033
-  0x8b26618e  =  672
-  0xf74e0e8e  =  684
-  0xcccc6cd  =  748
+  0xaccbda17 LinkRotation =  -5.419998645782471
+  0x8b26618e LinkPosition =  672
+  0xf74e0e8e MapName =  684
+  0xcccc6cd MapPath =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

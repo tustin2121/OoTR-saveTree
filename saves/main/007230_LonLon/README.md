@@ -1,5 +1,6 @@
 ##  Lon Lon Ranch
-(HyruleField/HyruleField_Child)
+<span style="font-size: smaller; opacity:0.6;">HyruleField/HyruleField_Child @ (-62.92, 150.26, 188.12) / 170.00&deg;
+</span>
 
 Autosaved at 2026/11/15 at 21:19:06  
 Progress: [🟢🟥💙|]   
@@ -51,12 +52,12 @@ Songs: [💤🌲🕔️|]
   0x74bd05d0 HeartsMax =  24
   0x1e55ecc5 HeartsCurr =  24
   0x9811a3f7 FileSaved_Year =  2026
-  0xaccbda17  =  1126825983
-  0x8b26618e  =  672
-  0xf74e0e8e  =  684
-  0xcccc6cd  =  748
+  0xaccbda17 LinkRotation =  169.99998474121094
+  0x8b26618e LinkPosition =  672
+  0xf74e0e8e MapName =  684
+  0xcccc6cd MapPath =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

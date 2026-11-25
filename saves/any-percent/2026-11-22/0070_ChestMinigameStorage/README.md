@@ -1,5 +1,6 @@
-##  Market/ Market_ Child
-(Market)
+##  Market
+<span style="font-size: smaller; opacity:0.6;">Market/Market_Child @ (-58.99, 97.27, 11.25) / 85.26&deg;
+</span>
 
 Manually saved at 2026/11/22 at 12:11:56  
 Progress: [🟢|]   
@@ -50,12 +51,12 @@ Songs: [💤|]
   0x74bd05d0 HeartsMax =  12
   0x19f26b6a MagicCurr =  0
   0xa9557547 RupeeCount =  13
-  0xaccbda17  =  1118470903
-  0x8b26618e  =  672
-  0xcccc6cd  =  684
-  0xf74e0e8e  =  748
+  0xaccbda17 LinkRotation =  85.25579071044922
+  0x8b26618e LinkPosition =  672
+  0xcccc6cd MapPath =  684
+  0xf74e0e8e MapName =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

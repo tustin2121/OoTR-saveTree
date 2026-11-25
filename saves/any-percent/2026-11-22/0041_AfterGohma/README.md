@@ -1,5 +1,6 @@
-##  Inside The Deku Tree/ Inside The Deku Tree
-(InsideTheDekuTree)
+##  Inside The Deku Tree
+<span style="font-size: smaller; opacity:0.6;">InsideTheDekuTree/InsideTheDekuTree @ (16.83, 46.99, 67.83) / -90.19&deg;
+</span>
 
 Autosaved at 2026/11/21 at 11:49:41  
 Progress: [|]   
@@ -50,12 +51,12 @@ Songs: [|]
   0x74bd05d0 HeartsMax =  16
   0x19f26b6a MagicCurr =  0
   0xa9557547 RupeeCount =  12
-  0xaccbda17  =  3266600853
-  0x8b26618e  =  672
-  0xcccc6cd  =  684
-  0xf74e0e8e  =  748
+  0xaccbda17 LinkRotation =  -90.18668365478516
+  0x8b26618e LinkPosition =  672
+  0xcccc6cd MapPath =  684
+  0xf74e0e8e MapName =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

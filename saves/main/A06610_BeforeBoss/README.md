@@ -1,5 +1,6 @@
 ##  Inside Jabu Jabu Belly
-(InsideJabuJabuBelly/InsideJabuJabuBelly)
+<span style="font-size: smaller; opacity:0.6;">InsideJabuJabuBelly/InsideJabuJabuBelly @ (42.99, 100.44, -76.77) / 4.15&deg;
+</span>
 
 Manually saved at 2026/11/21 at 23:02:18  
 Progress: [🟢|]   
@@ -51,12 +52,12 @@ Songs: [💤🌲|]
   0x74bd05d0 HeartsMax =  16
   0x1e55ecc5 HeartsCurr =  16
   0x9811a3f7 FileSaved_Year =  2026
-  0xaccbda17  =  1082442263
-  0x8b26618e  =  672
-  0xf74e0e8e  =  684
-  0xcccc6cd  =  748
+  0xaccbda17 LinkRotation =  4.148692607879639
+  0x8b26618e LinkPosition =  672
+  0xf74e0e8e MapName =  684
+  0xcccc6cd MapPath =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->
