@@ -1,5 +1,6 @@
-##  Spirit Temple/ Spirit Temple
-(SpiritTemple)
+##  Spirit Temple
+<span style="font-size: smaller; opacity:0.6;">SpiritTemple/SpiritTemple @ (48.82, 130.01, -17.42) / 96.59&deg;
+</span>
 
 Manually saved at 2026/11/22 at 22:36:00  
 Progress: [🟢|🥷]   
@@ -51,12 +52,12 @@ Songs: [💤🌲|🌲🌋]
   0x74bd05d0 HeartsMax =  16
   0x19f26b6a MagicCurr =  240
   0xa9557547 RupeeCount =  10
-  0xaccbda17  =  1119956230
-  0x8b26618e  =  672
-  0xcccc6cd  =  684
-  0xf74e0e8e  =  748
+  0xaccbda17 LinkRotation =  96.58793640136719
+  0x8b26618e LinkPosition =  672
+  0xcccc6cd MapPath =  684
+  0xf74e0e8e MapName =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

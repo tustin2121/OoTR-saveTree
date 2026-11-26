@@ -1,5 +1,6 @@
 ##  Graveyard
-(Graveyard/Graveyard_Child)
+<span style="font-size: smaller; opacity:0.6;">Graveyard/Graveyard_Child @ (42.23, 104.60, 2.63) / -90.00&deg;
+</span>
 
 Autosaved at 2026/11/17 at 22:47:17  
 Progress: [🟢🟥💙|💡🌲🔥🌊]   
@@ -51,12 +52,12 @@ Songs: [💤🌲🐴🕔️⛈️|⛪️🌲🌋🛶🪦]
   0x74bd05d0 HeartsMax =  36
   0x1e55ecc5 HeartsCurr =  33
   0x9811a3f7 FileSaved_Year =  2026
-  0xaccbda17  =  3266576381
-  0x8b26618e  =  672
-  0xf74e0e8e  =  684
-  0xcccc6cd  =  748
+  0xaccbda17 LinkRotation =  -89.9999771118164
+  0x8b26618e LinkPosition =  672
+  0xf74e0e8e MapName =  684
+  0xcccc6cd MapPath =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

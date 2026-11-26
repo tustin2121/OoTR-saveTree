@@ -48,6 +48,11 @@ const INFO = {
 	SongSpirit:       0x83254520,
 	
 	AutoSaveMarker:   0x25F03CAA,
+	Thumbnail:        0x63696a32,
+	MapPath:          0x0cccc6cd,
+	MapName:          0xf74e0e8e,
+	LinkPosition:     0x8b26618e,
+	LinkRotation:     0xaccbda17,
 };
 const reverseInfo = new Map(Object.entries(INFO).map(([x,y])=>[y,x]));
 
@@ -73,28 +78,42 @@ for (const entry of await FS.readdir(dir, { withFileTypes: true, recursive: true
 		
 		const infoMap = new Map();
 		for (let i = 0x28; i < 0x2A0; i += 8) {
-			const key = data.readUInt32LE(i);
-			const val = data.readUint32LE(i+4);
+			let key = data.readUInt32LE(i);
+			let val = data.readUint32LE(i+4);
 			if (key === 0) continue;
+			if (key === INFO.LinkRotation) { // Hacky
+				val = data.readFloatLE(i+4);
+			}
 			infoMap.set(key, val);
 		}
 		
-		let mapName = data.toString('utf8', 0x02AC, 0x02AC+0x40);
-		let mapPath = data.toString('utf8', 0x02EC, 0x02EC+0x40);
+		const cstr = (tag)=>{
+			const ptr = infoMap.get(tag);
+			const str = data.toString('utf8', ptr, ptr+0x40);
+			return str.slice(0, str.indexOf('\0'));
+		};
 		
-		mapName = mapName.slice(0, mapName.indexOf('\0'));
-		mapPath = mapPath.slice(0, mapPath.indexOf('\0'));
-		
-		mapName = mapName.replaceAll(/[A-Z]/g, " $&");
+		const mapName = cstr(INFO.MapName).replaceAll(/[A-Z]/g, " $&");
+		const mapPath = cstr(INFO.MapPath);
 		
 		{ // Grab thumbnail
-			const length = data.readUint32LE(0x0570);
-			const thumb = data.subarray(0x0574, 0x574 + length);
+			const ptr = infoMap.get(INFO.Thumbnail);
+			const length = data.readUint32LE(ptr);
+			const thumb = data.subarray(ptr + 4, ptr + 4 + length);
 			FS.writeFile(PATH.join(folder, THUMBNAIL), thumb);
 		}
 		{ // write README.md
 			let readme = `## ${mapName}\n`
-			readme += `(${mapPath})\n\n`
+			readme += `<span style="font-size: smaller; opacity:0.6;">`;
+			{
+				const rot = infoMap.get(INFO.LinkRotation);
+				const posPtr = infoMap.get(INFO.LinkPosition);
+				const x = data.readFloatLE(posPtr + 0);
+				const y = data.readFloatLE(posPtr + 4);
+				const z = data.readFloatLE(posPtr + 8);
+				readme += `${mapPath} @ (${x.toFixed(2)}, ${y.toFixed(2)}, ${z.toFixed(2)}) / ${rot.toFixed(2)}&deg;\n`;
+			}
+			readme += `</span>\n\n`
 			readme += `${infoMap.get(INFO.AutoSaveMarker)?'Autosaved':'Manually saved'} at ${infoMap.get(INFO.FileSaved_Year)}/${('00'+infoMap.get(INFO.FileSaved_Month)).slice(-2)}/${('00'+infoMap.get(INFO.FileSaved_Day)).slice(-2)} at ${infoMap.get(INFO.FileSaved_Hour)}:${('00'+infoMap.get(INFO.FileSaved_Minute)).slice(-2)}:${('00'+infoMap.get(INFO.FileSaved_Second)).slice(-2)}  \n`;
 			
 			readme += `Progress: [`;

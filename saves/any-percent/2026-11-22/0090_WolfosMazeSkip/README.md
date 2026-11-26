@@ -1,5 +1,6 @@
-##  Sacred Forest Meadow/ Sacred Forest Meadow_ Child
-(SacredForestMeadow)
+##  Sacred Forest Meadow
+<span style="font-size: smaller; opacity:0.6;">SacredForestMeadow/SacredForestMeadow_Child @ (-7.01, 100.00, 70.41) / 0.56&deg;
+</span>
 
 Manually saved at 2026/11/21 at 21:50:04  
 Progress: [🟢|]   
@@ -50,12 +51,12 @@ Songs: [💤|]
   0x74bd05d0 HeartsMax =  12
   0x19f26b6a MagicCurr =  0
   0xa9557547 RupeeCount =  60
-  0xaccbda17  =  1057963378
-  0x8b26618e  =  672
-  0xcccc6cd  =  684
-  0xf74e0e8e  =  748
+  0xaccbda17 LinkRotation =  0.5595313310623169
+  0x8b26618e LinkPosition =  672
+  0xcccc6cd MapPath =  684
+  0xf74e0e8e MapName =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

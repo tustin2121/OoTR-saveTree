@@ -1,5 +1,6 @@
-##  Sacred Forest Meadow/ Sacred Forest Meadow_ Adult
-(SacredForestMeadow)
+##  Sacred Forest Meadow
+<span style="font-size: smaller; opacity:0.6;">SacredForestMeadow/SacredForestMeadow_Adult @ (-6.99, 100.00, 69.00) / 0.89&deg;
+</span>
 
 Manually saved at 2026/11/22 at 21:17:44  
 Progress: [🟢|🥷]   
@@ -51,12 +52,12 @@ Songs: [💤🌲|🌋]
   0x74bd05d0 HeartsMax =  16
   0x19f26b6a MagicCurr =  240
   0xa9557547 RupeeCount =  9
-  0xaccbda17  =  1063433671
-  0x8b26618e  =  672
-  0xcccc6cd  =  684
-  0xf74e0e8e  =  748
+  0xaccbda17 LinkRotation =  0.8855862021446228
+  0x8b26618e LinkPosition =  672
+  0xcccc6cd MapPath =  684
+  0xf74e0e8e MapName =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

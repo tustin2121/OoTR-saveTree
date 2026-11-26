@@ -1,5 +1,6 @@
 ##  Inside Ganon Castle
-(InsideGanonCastle/InsideGanonCastle)
+<span style="font-size: smaller; opacity:0.6;">InsideGanonCastle/InsideGanonCastle @ (-0.11, 104.90, -15.60) / -6.69&deg;
+</span>
 
 Manually saved at 2026/11/19 at 20:58:23  
 Progress: [🟢🟥💙|💡🌲🔥🌊🥷👻]   
@@ -51,12 +52,12 @@ Songs: [💤🌲🐴☀️🕔️⛈️|⛪️🌲🌋🛶🪦🏜️]
   0x74bd05d0 HeartsMax =  44
   0x1e55ecc5 HeartsCurr =  38
   0x9811a3f7 FileSaved_Year =  2026
-  0xaccbda17  =  3235251845
-  0x8b26618e  =  672
-  0xf74e0e8e  =  684
-  0xcccc6cd  =  748
+  0xaccbda17 LinkRotation =  -6.688295841217041
+  0x8b26618e LinkPosition =  672
+  0xf74e0e8e MapName =  684
+  0xcccc6cd MapPath =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

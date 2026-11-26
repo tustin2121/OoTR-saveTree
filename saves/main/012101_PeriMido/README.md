@@ -1,5 +1,6 @@
 ##  Lost Wood
-(LostWood/LostWood_Adult)
+<span style="font-size: smaller; opacity:0.6;">LostWood/LostWood_Adult @ (48.41, 100.00, -27.13) / -8.44&deg;
+</span>
 
 Autosaved at 2026/11/15 at 23:08:55  
 Progress: [🟢🟥💙|💡]   
@@ -51,12 +52,12 @@ Songs: [💤🌲🐴🕔️⛈️|]
   0x74bd05d0 HeartsMax =  24
   0x1e55ecc5 HeartsCurr =  22
   0x9811a3f7 FileSaved_Year =  2026
-  0xaccbda17  =  3238467392
-  0x8b26618e  =  672
-  0xf74e0e8e  =  684
-  0xcccc6cd  =  748
+  0xaccbda17 LinkRotation =  -8.44317626953125
+  0x8b26618e LinkPosition =  672
+  0xf74e0e8e MapName =  684
+  0xcccc6cd MapPath =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->

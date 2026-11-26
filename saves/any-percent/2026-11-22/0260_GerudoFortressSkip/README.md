@@ -1,5 +1,6 @@
-##  Gerudo Fortress/ Gerudo Fortress_ Adult
-(GerudoFortress)
+##  Gerudo Fortress
+<span style="font-size: smaller; opacity:0.6;">GerudoFortress/GerudoFortress_Adult @ (-26.20, 106.70, -23.38) / -40.30&deg;
+</span>
 
 Manually saved at 2026/11/22 at 21:53:25  
 Progress: [🟢|🥷]   
@@ -51,12 +52,12 @@ Songs: [💤🌲|🌲🌋]
   0x74bd05d0 HeartsMax =  16
   0x19f26b6a MagicCurr =  240
   0xa9557547 RupeeCount =  10
-  0xaccbda17  =  3256956913
-  0x8b26618e  =  672
-  0xcccc6cd  =  684
-  0xf74e0e8e  =  748
+  0xaccbda17 LinkRotation =  -40.304630279541016
+  0x8b26618e LinkPosition =  672
+  0xcccc6cd MapPath =  684
+  0xf74e0e8e MapName =  748
   0x47c0901e  =  812
-  0x63696a32  =  1392
+  0x63696a32 Thumbnail =  1392
   0x51c58419  =  0
   0x26f3523b  =  0
 -->
