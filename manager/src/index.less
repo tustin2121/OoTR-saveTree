@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('../res/font.css');
 
 @border-color: #53604e;
 @border: 1px solid @border-color;
@@ -22,16 +23,19 @@ body {
 	// min-width: 900px;
 	// min-height: 640px;
 	// overflow: hidden;
+	--right-column: 600px;
+	--left-column: 600px;
 }
 
 #wrapper {
 	display: grid;
 	grid:
-		"topLeft mid topRight" 3rem
-		"midLeft mid midRight" 1fr
+		"titleLeft mid titleRight" 3rem
+		"topLeft   mid topRight" 3rem
+		"midLeft   mid midRight" 1fr
 		// "botLeft mid botRight" 3rem 
 		"status status status" 2rem /
-		1fr 3rem 1fr;
+		var(--right-column) 1fr var(--left-column);
 	;
 	height: 100vh; 
 	background: 
@@ -42,6 +46,7 @@ body {
 		overflow-y: scroll;
 		padding: calc(1rem);
 		overflow-y: overlay;
+		container-type: size;
 	}
 	#libList {
 		grid-area: midLeft;
@@ -76,10 +81,10 @@ body {
 .slot {
 	@border-color: #937735;
 	--border: 0.25rem;
-	--corner: 1.5vw;
+	--corner: 4.5cqw;
 	
-	margin: 1rem 2vw;
-	z-index: 0; height: 8vw;
+	margin: 1rem 1cqw;
+	z-index: 0; height: 22cqw;
 	font-family: @brand-font;
 	position: relative;
 	filter: drop-shadow(2px 2px 6px black);
@@ -88,7 +93,7 @@ body {
 		position: absolute;
 		inset: 0;
 		clip-path: @cornerPath;
-		font-size: 1.2vw;
+		font-size: 3.2cqw;
 		// border: #937735 2px solid;
 		padding: 0.5em;
 		background-color: #775727;
@@ -98,7 +103,7 @@ body {
 			"preview title     title  progress" 2fr
 			"preview status    status progress" 1fr
 			"preview path      path   progress" 1fr
-			/ 2fr 3fr 1fr 1.5fr;
+			/ 26% 3fr 1fr 1.5fr;
 		
 		img { 
 			grid-area: preview;
@@ -118,7 +123,7 @@ body {
 		}
 		.save-type {
 			grid-area: d1;
-			font-size: 0.8em;
+			font-size: 0.6em;
 			background-color: #443826;
 			text-align: center;
 			border-radius: 1em;

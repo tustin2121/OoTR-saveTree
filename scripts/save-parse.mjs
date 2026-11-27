@@ -31,7 +31,7 @@ const KNOWN_VARS_CAPTION = new Map([
 	[0x943F8EC3, { t:'uint',  lbl: 'Magic Max' }],
 	[0x19F26B6A, { t:'uint',  lbl: 'Magic Curr' }],
 	[0xE8BD6759, { t:'bool',  lbl: 'Double Defense' }],
-	[0xA9557547, { t:'bool',  lbl: 'Rupee Count' }],
+	[0xA9557547, { t:'uint',  lbl: 'Rupee Count' }],
 	[0xDC941483, { t:'uint',  lbl: 'GS Count' }],
 	[0x7C5B03DC, { t:'bool',  lbl: 'Field Music Start' }],
 	[0xC72044FC, { t:'bool',  lbl: 'Post Game' }],

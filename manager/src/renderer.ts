@@ -16,10 +16,75 @@ import './index.less';
 import '@fortawesome/fontawesome-free/css/solid.css';
 import '@fortawesome/fontawesome-free/css/fontawesome.css';
 
+import { SaveFileCaption } from './save-parse.js';
+
 
 class ManagerApp {
 	constructor() {
 		
+	}
+	
+	makeSaveCaption(file:SaveFileCaption) {
+		const $game = document.createElement('div');
+		$game.classList.add('game');
+		{
+			const $a = document.createElement('img');
+			const blob = file.thumbnail;
+			const url = URL.createObjectURL(blob);
+			$a.addEventListener('load', ()=>URL.revokeObjectURL(url));
+			$a.src = url;
+			$game.appendChild($a);
+		}{
+			const $a = document.createElement('h1');
+			$a.innerText = file.map_name.replaceAll(/[A-Z]/g, " $&");
+			$game.appendChild($a);
+		}{
+			const $a = document.createElement('h2');
+			const d = new Date(
+				file.file_saved_year,
+				file.file_saved_month,
+				file.file_saved_day,
+				file.file_saved_hour,
+				file.file_saved_minute,
+				file.file_saved_second
+			);
+			$a.innerText = d.toDateString();
+			$game.appendChild($a);
+		}{
+			const $a = document.createElement('span');
+			$a.classList.add('save-type');
+			$a.innerText = file.autosave? `Autosave` : `Manual`;
+			$game.appendChild($a);
+		}{
+			const $a = document.createElement('div');
+			$a.classList.add('progress');
+			const $b = document.createElement('div');
+			$b.classList.add('quest');
+			$a.appendChild($b);
+			if (file.progress_stone_forest) $b.append(`<span class="stone-forest"></span>`);
+			if (file.progress_stone_fire)   $b.append(`<span class="stone-fire"></span>`);
+			if (file.progress_stone_water)  $b.append(`<span class="stone-water"></span>`);
+			if (file.progress_medal_light)  $b.append(`<span class="medallion-light"></span>`);
+			if (file.progress_medal_forest) $b.append(`<span class="medallion-forest"></span>`);
+			if (file.progress_medal_fire)   $b.append(`<span class="medallion-fire"></span>`);
+			if (file.progress_medal_water)  $b.append(`<span class="medallion-water"></span>`);
+			if (file.progress_medal_shadow) $b.append(`<span class="medallion-shadow"></span>`);
+			if (file.progress_medal_spirit) $b.append(`<span class="medallion-spirit"></span>`);
+			$game.appendChild($a);
+		}{
+			const $a = document.createElement('div');
+			$a.classList.add('status');
+			$a.append(`<span class="health">${file.heath_curr}/${file.heath_max}</span>`);
+			$a.append(`<span class="magic">${file.magic_curr}/${file.magic_max}</span>`);
+			$a.append(`<span class="skulls">${file.gs_count}</span>`);
+			$a.append(`<span class="rupees">${file.rupee_count}</span>`);
+			$game.appendChild($a);
+		}{
+			const $a = document.createElement('div');
+			$a.classList.add('file');
+			$a.innerText = file.map_path;
+			$game.appendChild($a);
+		}
 	}
 }
 
